@@ -1,0 +1,15 @@
+extends Area2D
+
+@export var speed : float = 150
+@export var panic : float = 150
+
+func _ready() -> void:
+	add_to_group("Fish")
+	
+func _process(delta: float) -> void:
+	var mouse_pos = get_global_mouse_position()
+	var distance = global_position.distance_to(mouse_pos)
+	
+	if distance < panic:
+		var direction = (global_position - mouse_pos).normalized()
+		global_position += direction * speed * delta
