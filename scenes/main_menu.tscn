@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://snlrsnoqa5ev"]
+
+[ext_resource type="Texture2D" uid="uid://biheivjhpax72" path="res://scenes/Untitled design.png" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://dyhh7todiry8n" path="res://scenes/start.gd" id="2_ekxnf"]
+
+[node name="main_menu" type="Node2D" unique_id=2038718892]
+
+[node name="ig" type="Sprite2D" parent="." unique_id=156337925]
+position = Vector2(574.14044, 328.69238)
+scale = Vector2(0.5998537, 0.61168087)
+texture = ExtResource("1_l6cm7")
+
+[node name="start" type="Button" parent="." unique_id=1785641755]
+offset_left = 282.0
+offset_top = 529.0
+offset_right = 563.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 42
+text = "Start game!"
+script = ExtResource("2_ekxnf")
+
+[node name="quit" type="Button" parent="." unique_id=1991705301]
+offset_left = 567.0
+offset_top = 529.0
+offset_right = 848.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 42
+text = "Quit game!"
+
+[connection signal="pressed" from="start" to="start" method="_on_pressed"]

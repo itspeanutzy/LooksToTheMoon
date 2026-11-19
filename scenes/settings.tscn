@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://chhfe0q4es5ks"]
+
+[ext_resource type="Texture2D" uid="uid://1d8mvw2hcqj8" path="res://Untitled design (1).png" id="1_5p8wc"]
+
+[sub_resource type="Animation" id="Animation_5p8wc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UntitledDesign(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(568, 354)]
+}
+
+[sub_resource type="Animation" id="Animation_r6d6q"]
+resource_name = "open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UntitledDesign(1):position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 0.13333334, 0.2, 0.26666668),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 939), Vector2(566, 265.00006), Vector2(566, 294.00006), Vector2(566, 327.00006)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6wm04"]
+_data = {
+&"RESET": SubResource("Animation_5p8wc"),
+&"open": SubResource("Animation_r6d6q")
+}
+
+[node name="settings" type="Node2D" unique_id=286645141]
+
+[node name="UntitledDesign(1)" type="Sprite2D" parent="." unique_id=1405028213]
+position = Vector2(568, 354)
+scale = Vector2(0.45677087, 0.5138889)
+texture = ExtResource("1_5p8wc")
+
+[node name="Button" type="Button" parent="UntitledDesign(1)" unique_id=2018782484]
+offset_left = -243.01009
+offset_top = -212.10814
+offset_right = 190.46764
+offset_bottom = -99.02696
+theme_override_font_sizes/font_size = 59
+text = "Hi lol"
+
+[node name="Button2" type="Button" parent="UntitledDesign(1)" unique_id=1862163802]
+offset_left = -245.19937
+offset_top = 33.08101
+offset_right = 188.27835
+offset_bottom = 146.16216
+theme_override_font_sizes/font_size = 59
+text = "Get back here"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1729309206]
+libraries/ = SubResource("AnimationLibrary_6wm04")
+autoplay = &"open"
