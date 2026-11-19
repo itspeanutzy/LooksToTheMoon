@@ -13,3 +13,11 @@ func _process(delta: float) -> void:
 	if distance < panic:
 		var direction = (global_position - mouse_pos).normalized()
 		global_position += direction * speed * delta
+		
+		rotation = direction.angle() + (PI/2)
+		
+	var screen_size = get_viewport_rect().size
+	var margin = 50
+	
+	global_position.x = clamp(global_position.x, margin, screen_size.x - margin)
+	global_position.y = clamp(global_position.y, margin, screen_size.y - margin)

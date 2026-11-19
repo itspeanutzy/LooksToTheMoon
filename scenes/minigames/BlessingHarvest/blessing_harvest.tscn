@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b3ukhc0w63ruh"]
 
-[ext_resource type="Script" uid="uid://dlhils1oshx84" path="res://scenes/minigames/blessing_harvest.gd" id="1_wofty"]
-[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/placeholder_water.png" id="1_xeprx"]
-[ext_resource type="Texture2D" uid="uid://dqw3krvpjr8s4" path="res://assets/sprites/placeholder_boat.png" id="2_wofty"]
-[ext_resource type="PackedScene" uid="uid://ihpp2k7oucbj" path="res://scenes/minigames/fih.tscn" id="4_8c0js"]
+[ext_resource type="Script" uid="uid://dlhils1oshx84" path="res://scenes/minigames/BlessingHarvest/blessing_harvest.gd" id="1_wgdlm"]
+[ext_resource type="PackedScene" uid="uid://ihpp2k7oucbj" path="res://scenes/minigames/BlessingHarvest/fih.tscn" id="2_dyaw6"]
+[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/placeholder_water.png" id="3_pslgi"]
+[ext_resource type="Texture2D" uid="uid://dqw3krvpjr8s4" path="res://assets/sprites/placeholder_boat.png" id="4_y1itr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(884.7815, 584.3994)
@@ -12,13 +12,13 @@ size = Vector2(884.7815, 584.3994)
 size = Vector2(882.6125, 583.7677)
 
 [node name="Node2D" type="Node2D" unique_id=940987323]
-script = ExtResource("1_wofty")
-fish_scene = ExtResource("4_8c0js")
+script = ExtResource("1_wgdlm")
+fish_scene = ExtResource("2_dyaw6")
 
 [node name="Water" type="Sprite2D" parent="." unique_id=1076653617]
 position = Vector2(575.5, 325.00003)
 scale = Vector2(0.9023438, 0.8972223)
-texture = ExtResource("1_xeprx")
+texture = ExtResource("3_pslgi")
 
 [node name="Boat1" type="Area2D" parent="." unique_id=1295410493]
 position = Vector2(349.00003, 175.99998)
@@ -26,7 +26,7 @@ rotation = 1.3212142
 scale = Vector2(0.26128092, 0.3174845)
 
 [node name="Sprite2D" type="Sprite2D" parent="Boat1" unique_id=1488186926]
-texture = ExtResource("2_wofty")
+texture = ExtResource("4_y1itr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boat1" unique_id=237351602]
 position = Vector2(-2.3634644, 15.708923)
@@ -39,12 +39,31 @@ rotation = 1.8884462
 scale = Vector2(0.26128092, 0.3174845)
 
 [node name="Sprite2D" type="Sprite2D" parent="Boat2" unique_id=1515753864]
-texture = ExtResource("2_wofty")
+texture = ExtResource("4_y1itr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boat2" unique_id=567371550]
 position = Vector2(-1.123291, 10.902344)
 scale = Vector2(1, 1.0000001)
 shape = SubResource("RectangleShape2D_8vrlf")
+
+[node name="OverlayLayer" type="CanvasLayer" parent="." unique_id=1518266762]
+
+[node name="ColorRect" type="ColorRect" parent="OverlayLayer" unique_id=1929389067]
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 1155.0
+offset_bottom = 648.0
+color = Color(0, 0, 0.078431375, 0.64705884)
+
+[node name="Message" type="Label" parent="OverlayLayer/ColorRect" unique_id=1960859813]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 268.0
+offset_right = 956.0
+offset_bottom = 335.0
+theme_override_font_sizes/font_size = 54
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1374543098]
 
@@ -57,6 +76,13 @@ theme_override_colors/font_color = Color(0.8342837, 0.3478994, 0.1888062, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7764706)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
 theme_override_font_sizes/font_size = 32
+
+[node name="Timer" type="Label" parent="HUD" unique_id=2071639525]
+offset_left = -11.0
+offset_top = 573.0
+offset_right = 246.0
+offset_bottom = 643.0
+theme_override_font_sizes/font_size = 34
 
 [connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
 [connection signal="area_entered" from="Boat1" to="." method="_on_boat_area_entered"]
