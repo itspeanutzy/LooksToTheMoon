@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://qqrk17msdk7w"]
+
+[ext_resource type="Script" uid="uid://d3k2f3mi070pu" path="res://scripts/random rock.gd" id="1_hmofq"]
+[ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/boat.tscn" id="2_hmofq"]
+
+[node name="Node2D" type="Node2D" unique_id=1178880898]
+script = ExtResource("1_hmofq")
+
+[node name="boat" parent="." unique_id=1029574646 instance=ExtResource("2_hmofq")]
+position = Vector2(182, 343)
