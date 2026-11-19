@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnn2xxqv2i3c6"]
 
-[ext_resource type="Script" uid="uid://cbr5t6q26lk1a" path="res://script/rock move.gd" id="1_1mueq"]
-[ext_resource type="Texture2D" uid="uid://b843v2j4hybab" path="res://icon.svg" id="1_odth8"]
+[ext_resource type="Script" uid="uid://cbr5t6q26lk1a" path="res://scripts/rock move.gd" id="1_1mueq"]
+[ext_resource type="Texture2D" uid="uid://kfhly60qvs5y" path="res://icon.svg" id="1_odth8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(112, 66)

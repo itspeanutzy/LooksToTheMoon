@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dj2venjatja2a"]
+
+[ext_resource type="Texture2D" uid="uid://kfhly60qvs5y" path="res://icon.svg" id="1_b06ty"]
+[ext_resource type="Script" uid="uid://dqvgx0xu52o01" path="res://scripts/heart_health_ui.gd" id="1_v2vay"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=709552886]
+script = ExtResource("1_v2vay")
+
+[node name="Panel" type="Panel" parent="." unique_id=1521528174]
+offset_right = 322.0
+offset_bottom = 61.0
+
+[node name="health" type="TextureRect" parent="Panel" unique_id=1822533163]
+layout_mode = 0
+offset_left = 14.000002
+offset_top = 6.000001
+offset_right = 400.11115
+offset_bottom = 134.0
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("1_b06ty")
+stretch_mode = 1
