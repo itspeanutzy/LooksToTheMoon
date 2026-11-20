@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ihpp2k7oucbj"]
+
+[ext_resource type="Script" uid="uid://cqv8e4kp0giet" path="res://scenes/minigames/BlessingHarvest/fish_blshv.gd" id="1_efgbp"]
+[ext_resource type="Texture2D" uid="uid://cejk0t00ipqx4" path="res://assets/sprites/placeholder_fish.png" id="2_r46gl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vivr"]
+radius = 13.0
+height = 64.0
+
+[node name="Fih" type="Area2D" unique_id=81587259]
+script = ExtResource("1_efgbp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2109400413]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_r46gl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2045646175]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_1vivr")

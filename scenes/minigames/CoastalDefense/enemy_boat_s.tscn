@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b6mn30pejj3ki"]
+
+[ext_resource type="Script" uid="uid://bookr6v3u5qtx" path="res://scenes/minigames/CoastalDefense/enemy_boat.gd" id="1_bwsbu"]
+[ext_resource type="Texture2D" uid="uid://bfcr8rwdw5qsb" path="res://assets/sprites/fe5db26ccadc0447be3a50e894e10c58 1.png" id="2_lgkx2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(91, 134)
+
+[node name="EnemyBoat-S" type="Area2D" unique_id=713483453]
+script = ExtResource("1_bwsbu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1366076588]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_lgkx2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=698638153]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_1vivr")

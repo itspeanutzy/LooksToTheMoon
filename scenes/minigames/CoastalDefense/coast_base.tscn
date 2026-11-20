@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://xj0gg6m1xh5g"]
+
+[ext_resource type="Script" uid="uid://bfre44oxfhh7e" path="res://scenes/minigames/CoastalDefense/coast_base.gd" id="1_pc6h8"]
+[ext_resource type="Texture2D" uid="uid://bbsnoan51avrv" path="res://assets/sprites/Group 109.png" id="2_vf7s5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vivr"]
+radius = 119.0
+height = 398.0
+
+[node name="Coast" type="Area2D" unique_id=786347701]
+script = ExtResource("1_pc6h8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=888085451]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_vf7s5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1300075528]
+position = Vector2(-114, -2)
+shape = SubResource("CapsuleShape2D_1vivr")
