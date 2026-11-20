@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://4fwuux0jd2ib"]
+
+[ext_resource type="Script" uid="uid://b71ve6jkamnsq" path="res://scenes/minigames/CoastalDefense/coastal_defense.gd" id="1_xcvmj"]
+[ext_resource type="PackedScene" uid="uid://b6mn30pejj3ki" path="res://scenes/minigames/CoastalDefense/enemy_boat_s.tscn" id="2_7on7f"]
+[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/placeholder_water.png" id="3_roenl"]
+[ext_resource type="PackedScene" uid="uid://xj0gg6m1xh5g" path="res://scenes/minigames/CoastalDefense/coast_base.tscn" id="4_jdjkp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vivr"]
+bg_color = Color(0.6, 0.6, 0.6, 0.4627451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8vrlf"]
+bg_color = Color(0.20492753, 0.6940999, 0.5441691, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1602725757]
+script = ExtResource("1_xcvmj")
+enemy_scene = ExtResource("2_7on7f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=572911422]
+position = Vector2(561, 326)
+texture = ExtResource("3_roenl")
+
+[node name="Coast" parent="." unique_id=786347701 instance=ExtResource("4_jdjkp")]
+position = Vector2(142, 323)
+
+[node name="OverlayLayer" type="CanvasLayer" parent="." unique_id=61575766]
+
+[node name="ColorRect2" type="ColorRect" parent="OverlayLayer" unique_id=1202292489]
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 1155.0
+offset_bottom = 648.0
+color = Color(0, 0, 0.078431375, 0.64705884)
+
+[node name="Message" type="Label" parent="OverlayLayer/ColorRect2" unique_id=1606797267]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 268.0
+offset_right = 956.0
+offset_bottom = 335.0
+theme_override_font_sizes/font_size = 54
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=810766866]
+
+[node name="TimeLabel" type="Label" parent="HUD" unique_id=525192512]
+offset_left = 37.0
+offset_top = 561.0
+offset_right = 294.0
+offset_bottom = 631.0
+theme_override_font_sizes/font_size = 34
+
+[node name="BaseHealthBar" type="ProgressBar" parent="HUD" unique_id=371937548]
+offset_left = 17.0
+offset_top = 45.0
+offset_right = 407.0
+offset_bottom = 77.0
+theme_override_styles/background = SubResource("StyleBoxFlat_1vivr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8vrlf")
+max_value = 10.0
+
+[node name="Label" type="Label" parent="HUD/BaseHealthBar" unique_id=294337906]
+layout_mode = 0
+offset_left = 17.0
+offset_top = -37.0
+offset_right = 162.0
+offset_bottom = -1.0
+theme_override_font_sizes/font_size = 26
+text = "Coast"
+vertical_alignment = 1
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1866177345]
+wait_time = 1.5
+autostart = true
+
+[node name="SurviveTimer" type="Timer" parent="." unique_id=1513491329]
+wait_time = 30.0
+autostart = true
