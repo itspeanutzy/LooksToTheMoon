@@ -4,6 +4,7 @@ var speed = 200
 var boat
 
 func _ready():
+	add_to_group("rocks")
 	body_entered.connect(_on_body_entered)
 	boat = get_tree().get_first_node_in_group("boat")
 

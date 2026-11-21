@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://qqrk17msdk7w"]
 
 [ext_resource type="Script" uid="uid://d3k2f3mi070pu" path="res://scripts/random rock.gd" id="1_hmofq"]
-[ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/boat.tscn" id="2_hmofq"]
+[ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/guide_a_ship_reg/boat.tscn" id="2_hmofq"]
 [ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scripts/guide_a_ship_cam.gd" id="3_ds6in"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_57qmd"]
