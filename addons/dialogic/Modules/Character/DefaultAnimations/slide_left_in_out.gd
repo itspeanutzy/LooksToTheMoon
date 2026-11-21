@@ -3,7 +3,7 @@ extends DialogicAnimation
 
 func animate() -> void:
 	var tween := (node.create_tween() as Tween)
-	tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+	tween.set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE)
 
 	var end_position_x: float = base_position.x + node.get_parent().global_position.x
 
