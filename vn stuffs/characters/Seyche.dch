@@ -19,7 +19,7 @@
 &"portraits": {
 "Seyche Normal": {
 "export_overrides": {
-"image": "\"res://assets/sprites/Seyche/seyche_normal.png\""
+"image": "\"res://assets/sprites/visualnovel/Seyche/seyche_normal.png\""
 },
 "ignore_char_scale": false,
 "mirror": false,

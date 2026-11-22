@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq40h0nff3mg"
-path="res://.godot/imported/seyche_normal.png-fa83eec4e2ec76c0568865d3e1041c33.ctex"
+uid="uid://blaeja1vltjn"
+path="res://.godot/imported/Krishark Sea Stormy.png-2c424b1276ec90fa68305aa9a87c6b56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Seyche/seyche_normal.png"
-dest_files=["res://.godot/imported/seyche_normal.png-fa83eec4e2ec76c0568865d3e1041c33.ctex"]
+source_file="res://assets/sprites/visualnovel/background/Krishark Sea Stormy.png"
+dest_files=["res://.godot/imported/Krishark Sea Stormy.png-2c424b1276ec90fa68305aa9a87c6b56.ctex"]
 
 [params]
 
