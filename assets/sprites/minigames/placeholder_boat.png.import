@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfcr8rwdw5qsb"
-path="res://.godot/imported/fe5db26ccadc0447be3a50e894e10c58 1.png-5d6e6d726bd36f824c279f64c122431c.ctex"
+uid="uid://dqw3krvpjr8s4"
+path="res://.godot/imported/placeholder_boat.png-f46d9de823eb32275221d488543e281f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/fe5db26ccadc0447be3a50e894e10c58 1.png"
-dest_files=["res://.godot/imported/fe5db26ccadc0447be3a50e894e10c58 1.png-5d6e6d726bd36f824c279f64c122431c.ctex"]
+source_file="res://assets/sprites/minigames/placeholder_boat.png"
+dest_files=["res://.godot/imported/placeholder_boat.png-f46d9de823eb32275221d488543e281f.ctex"]
 
 [params]
 

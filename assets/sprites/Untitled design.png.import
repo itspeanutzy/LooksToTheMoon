@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqw3krvpjr8s4"
-path="res://.godot/imported/placeholder_boat.png-5aec194fc3273d4f0b573fb9dd5271c5.ctex"
+uid="uid://biheivjhpax72"
+path="res://.godot/imported/Untitled design.png-e9779025b79eba83b0f47ac7f61034ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/placeholder_boat.png"
-dest_files=["res://.godot/imported/placeholder_boat.png-5aec194fc3273d4f0b573fb9dd5271c5.ctex"]
+source_file="res://assets/sprites/Untitled design.png"
+dest_files=["res://.godot/imported/Untitled design.png-e9779025b79eba83b0f47ac7f61034ea.ctex"]
 
 [params]
 

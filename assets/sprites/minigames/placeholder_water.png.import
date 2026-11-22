@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cejk0t00ipqx4"
-path="res://.godot/imported/placeholder_fish.png-19fc386915e9b54dcfcf94bbeade5116.ctex"
+uid="uid://cf2ua55n1rskk"
+path="res://.godot/imported/placeholder_water.png-0557c1bf57a48ec2e5d92946f32805d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/placeholder_fish.png"
-dest_files=["res://.godot/imported/placeholder_fish.png-19fc386915e9b54dcfcf94bbeade5116.ctex"]
+source_file="res://assets/sprites/minigames/placeholder_water.png"
+dest_files=["res://.godot/imported/placeholder_water.png-0557c1bf57a48ec2e5d92946f32805d6.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chhfe0q4es5ks"]
 
-[ext_resource type="Texture2D" uid="uid://1d8mvw2hcqj8" path="res://Untitled design (1).png" id="1_5p8wc"]
+[ext_resource type="Texture2D" uid="uid://1d8mvw2hcqj8" path="res://assets/sprites/Untitled design (1).png" id="1_5p8wc"]
 
 [sub_resource type="Animation" id="Animation_5p8wc"]
 length = 0.001

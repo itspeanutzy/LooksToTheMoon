@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://xj0gg6m1xh5g"]
 
 [ext_resource type="Script" uid="uid://bfre44oxfhh7e" path="res://scenes/minigames/CoastalDefense/coast_base.gd" id="1_pc6h8"]
-[ext_resource type="Texture2D" uid="uid://bbsnoan51avrv" path="res://assets/sprites/Group 109.png" id="2_vf7s5"]
+[ext_resource type="Texture2D" uid="uid://bbsnoan51avrv" path="res://assets/sprites/minigames/Group 109.png" id="2_vf7s5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vivr"]
 radius = 119.0

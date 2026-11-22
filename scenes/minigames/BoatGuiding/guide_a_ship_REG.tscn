@@ -1,21 +1,26 @@
 [gd_scene format=3 uid="uid://qqrk17msdk7w"]
 
-[ext_resource type="Script" uid="uid://d3k2f3mi070pu" path="res://scripts/random rock.gd" id="1_hmofq"]
-[ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/guide_a_ship_reg/boat.tscn" id="2_hmofq"]
-[ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scripts/guide_a_ship_cam.gd" id="3_ds6in"]
+[ext_resource type="Script" uid="uid://d3k2f3mi070pu" path="res://scenes/minigames/BoatGuiding/random rock.gd" id="1_xvvxp"]
+[ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/BoatGuiding/boat.tscn" id="2_cb5u0"]
+[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/minigames/placeholder_water.png" id="2_dlwrd"]
+[ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scenes/minigames/BoatGuiding/guide_a_ship_cam.gd" id="3_dlwrd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_57qmd"]
 distance = -1.9999999
 
 [node name="Node2D" type="Node2D" unique_id=1178880898]
-script = ExtResource("1_hmofq")
+script = ExtResource("1_xvvxp")
 
-[node name="boat" parent="." unique_id=1029574646 instance=ExtResource("2_hmofq")]
-position = Vector2(182, 343)
+[node name="water" type="Sprite2D" parent="." unique_id=1788445566]
+position = Vector2(570, 286)
+texture = ExtResource("2_dlwrd")
+
+[node name="boat" parent="." unique_id=1029574646 instance=ExtResource("2_cb5u0")]
+position = Vector2(176, 330)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1350226854]
 position = Vector2(575, 324)
-script = ExtResource("3_ds6in")
+script = ExtResource("3_dlwrd")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1474681483]
 

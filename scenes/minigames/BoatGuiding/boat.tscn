@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c8ooga3l40g7q"]
 
-[ext_resource type="Script" uid="uid://76hap86fke8s" path="res://scripts/movement.gd" id="1_hjaqi"]
-[ext_resource type="Texture2D" uid="uid://kfhly60qvs5y" path="res://icon.svg" id="1_xo3ru"]
+[ext_resource type="Script" uid="uid://76hap86fke8s" path="res://scenes/minigames/BoatGuiding/movement.gd" id="1_hjaqi"]
+[ext_resource type="Texture2D" uid="uid://br65p3v8jptws" path="res://assets/sprites/minigames/small_boat.png" id="2_bh456"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
 radius = 48.04165
@@ -10,8 +10,9 @@ radius = 48.04165
 script = ExtResource("1_hjaqi")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=158797235]
-scale = Vector2(0.7734375, 0.7734375)
-texture = ExtResource("1_xo3ru")
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_bh456")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2099203482]
 shape = SubResource("CircleShape2D_g4v7s")

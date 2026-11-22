@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b71ve6jkamnsq" path="res://scenes/minigames/CoastalDefense/coastal_defense.gd" id="1_xcvmj"]
 [ext_resource type="PackedScene" uid="uid://b6mn30pejj3ki" path="res://scenes/minigames/CoastalDefense/enemy_boat_s.tscn" id="2_7on7f"]
-[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/placeholder_water.png" id="3_roenl"]
+[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/minigames/placeholder_water.png" id="3_roenl"]
 [ext_resource type="PackedScene" uid="uid://xj0gg6m1xh5g" path="res://scenes/minigames/CoastalDefense/coast_base.tscn" id="4_jdjkp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vivr"]

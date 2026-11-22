@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ihpp2k7oucbj"]
 
 [ext_resource type="Script" uid="uid://cqv8e4kp0giet" path="res://scenes/minigames/BlessingHarvest/fish_blshv.gd" id="1_efgbp"]
-[ext_resource type="Texture2D" uid="uid://cejk0t00ipqx4" path="res://assets/sprites/placeholder_fish.png" id="2_r46gl"]
+[ext_resource type="Texture2D" uid="uid://cejk0t00ipqx4" path="res://assets/sprites/minigames/placeholder_fish.png" id="2_r46gl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vivr"]
 radius = 13.0

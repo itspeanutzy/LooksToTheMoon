@@ -1,9 +1,9 @@
 extends Node2D
 
-@onready var rock_scene = preload("res://scenes/minigames/guide_a_ship_reg/rock thing.tscn")
-@onready var wave_scene = preload("res://scenes/minigames/guide_a_ship_reg/wave.tscn")
+@onready var rock_scene = preload("res://scenes/minigames/BoatGuiding/rock thing.tscn")
+@onready var wave_scene = preload("res://scenes/minigames/BoatGuiding/wave.tscn")
 
-const WaveScript = preload("res://scripts/wave.gd")
+const WaveScript = preload("res://scenes/minigames/BoatGuiding/wave.gd")
 
 var boat
 var timer

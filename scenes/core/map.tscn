@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dwid3ksjwi42r"]
 
-[ext_resource type="Script" uid="uid://b5pm47y5i22g" path="res://scenes/map.gd" id="1_2klcf"]
-[ext_resource type="Texture2D" uid="uid://byco1r3ehv54k" path="res://scenes/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png" id="1_4xfga"]
-[ext_resource type="PackedScene" uid="uid://chhfe0q4es5ks" path="res://scenes/settings.tscn" id="3_2lpho"]
-[ext_resource type="Script" uid="uid://bk2jmvj48xnk1" path="res://scenes/button.gd" id="3_gldc4"]
+[ext_resource type="Script" uid="uid://b5pm47y5i22g" path="res://scenes/core/map.gd" id="1_2klcf"]
+[ext_resource type="Texture2D" uid="uid://byco1r3ehv54k" path="res://assets/sprites/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png" id="1_4xfga"]
+[ext_resource type="PackedScene" uid="uid://chhfe0q4es5ks" path="res://scenes/core/settings.tscn" id="3_2lpho"]
+[ext_resource type="Script" uid="uid://bk2jmvj48xnk1" path="res://scenes/core/button.gd" id="3_gldc4"]
 
 [node name="map" type="Node2D" unique_id=120332078]
 script = ExtResource("1_2klcf")

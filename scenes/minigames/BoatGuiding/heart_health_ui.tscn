@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dj2venjatja2a"]
 
 [ext_resource type="Texture2D" uid="uid://kfhly60qvs5y" path="res://icon.svg" id="1_b06ty"]
-[ext_resource type="Script" uid="uid://dqvgx0xu52o01" path="res://scripts/heart_health_ui.gd" id="1_v2vay"]
+[ext_resource type="Script" uid="uid://dqvgx0xu52o01" path="res://scenes/minigames/BoatGuiding/heart_health_ui.gd" id="1_v2vay"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=709552886]
 script = ExtResource("1_v2vay")

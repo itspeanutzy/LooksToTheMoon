@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1d8mvw2hcqj8"
-path="res://.godot/imported/Untitled design (1).png-0c1b3f12f61d06303cb51e092da74908.ctex"
+uid="uid://bfcr8rwdw5qsb"
+path="res://.godot/imported/fe5db26ccadc0447be3a50e894e10c58 1.png-5c3632954c532e31cfeeeda79b11294d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled design (1).png"
-dest_files=["res://.godot/imported/Untitled design (1).png-0c1b3f12f61d06303cb51e092da74908.ctex"]
+source_file="res://assets/sprites/minigames/fe5db26ccadc0447be3a50e894e10c58 1.png"
+dest_files=["res://.godot/imported/fe5db26ccadc0447be3a50e894e10c58 1.png-5c3632954c532e31cfeeeda79b11294d.ctex"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dlhils1oshx84" path="res://scenes/minigames/BlessingHarvest/blessing_harvest.gd" id="1_wgdlm"]
 [ext_resource type="PackedScene" uid="uid://ihpp2k7oucbj" path="res://scenes/minigames/BlessingHarvest/fih.tscn" id="2_dyaw6"]
-[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/placeholder_water.png" id="3_pslgi"]
-[ext_resource type="Texture2D" uid="uid://dqw3krvpjr8s4" path="res://assets/sprites/placeholder_boat.png" id="4_y1itr"]
+[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/minigames/placeholder_water.png" id="3_pslgi"]
+[ext_resource type="Texture2D" uid="uid://dqw3krvpjr8s4" path="res://assets/sprites/minigames/placeholder_boat.png" id="4_y1itr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(884.7815, 584.3994)

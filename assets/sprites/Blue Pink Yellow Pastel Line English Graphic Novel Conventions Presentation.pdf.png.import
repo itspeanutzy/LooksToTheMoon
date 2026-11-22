@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biheivjhpax72"
-path="res://.godot/imported/Untitled design.png-dd49bba4c4aa201ca9c36d7d0340fe98.ctex"
+uid="uid://byco1r3ehv54k"
+path="res://.godot/imported/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png-e599d576d4000072ef8600f51342a303.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Untitled design.png"
-dest_files=["res://.godot/imported/Untitled design.png-dd49bba4c4aa201ca9c36d7d0340fe98.ctex"]
+source_file="res://assets/sprites/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png"
+dest_files=["res://.godot/imported/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png-e599d576d4000072ef8600f51342a303.ctex"]
 
 [params]
 
