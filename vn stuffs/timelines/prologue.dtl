@@ -2,8 +2,8 @@
 join Seyche center [animation="Fade In Up" length="1.5" wait="true"]
 Seyche: FUCKK I NEED MY MOON BADDIE
 update Seyche left [move_time="1.0"]
-join "Seyche clone" right [animation="Slide From Right" length="1.0" wait="true"]
-"Seyche clone": hi twin
+join Strymir right [animation="Slide From Right" length="1.0" wait="true"]
+Strymir: hi twin
 hewwo
 update Seyche [animation="Shake X"]
 update Seyche [animation="Shake Y"]
