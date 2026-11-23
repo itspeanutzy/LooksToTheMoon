@@ -10,8 +10,8 @@ func _ready():
 
 
 func _process(delta):
-	if boat != null and boat.is_knocked_back:
-		return
+	#if boat != null and boat.is_knocked_back:
+	#	return
 
 	position.x -= speed * delta
 

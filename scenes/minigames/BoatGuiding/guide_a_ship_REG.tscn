@@ -1,19 +1,27 @@
 [gd_scene format=3 uid="uid://qqrk17msdk7w"]
 
+[ext_resource type="Script" uid="uid://cekp4ksnbqrs4" path="res://scenes/minigames/BoatGuiding/guide_ship.gd" id="1_m4dej"]
 [ext_resource type="Script" uid="uid://d3k2f3mi070pu" path="res://scenes/minigames/BoatGuiding/random rock.gd" id="1_xvvxp"]
 [ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/BoatGuiding/boat.tscn" id="2_cb5u0"]
 [ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/minigames/placeholder_water.png" id="2_dlwrd"]
 [ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scenes/minigames/BoatGuiding/guide_a_ship_cam.gd" id="3_dlwrd"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_57qmd"]
-distance = -1.9999999
+[ext_resource type="Script" uid="uid://vr2vjkn4ynm3" path="res://scenes/minigames/BoatGuiding/UI.gd" id="5_m4dej"]
+[ext_resource type="Texture2D" uid="uid://bkynij2oor6it" path="res://assets/sprites/minigames/Vector 1 1.png" id="6_aoics"]
 
 [node name="Node2D" type="Node2D" unique_id=1178880898]
-script = ExtResource("1_xvvxp")
+script = ExtResource("1_m4dej")
 
-[node name="water" type="Sprite2D" parent="." unique_id=1788445566]
-position = Vector2(570, 286)
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=43475717]
+repeat_size = Vector2(1160, 0)
+autoscroll = Vector2(-200, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1664915367]
+position = Vector2(583, 336)
+scale = Vector2(0.909375, 0.91944444)
 texture = ExtResource("2_dlwrd")
+
+[node name="Spawner" type="Node2D" parent="." unique_id=742590405]
+script = ExtResource("1_xvvxp")
 
 [node name="boat" parent="." unique_id=1029574646 instance=ExtResource("2_cb5u0")]
 position = Vector2(176, 330)
@@ -22,15 +30,46 @@ position = Vector2(176, 330)
 position = Vector2(575, 324)
 script = ExtResource("3_dlwrd")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1474681483]
+[node name="UI" type="CanvasLayer" parent="." unique_id=470917535]
+script = ExtResource("5_m4dej")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1713738714]
-position = Vector2(560, 647)
-shape = SubResource("WorldBoundaryShape2D_57qmd")
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=985224205]
+offset_left = 25.0
+offset_top = 21.0
+offset_right = 65.0
+offset_bottom = 61.0
+theme_override_constants/separation = 0
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1739572357]
+[node name="Life1" type="TextureRect" parent="UI/HBoxContainer" unique_id=1993363827]
+layout_mode = 2
+texture = ExtResource("6_aoics")
+stretch_mode = 5
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1193517964]
-position = Vector2(588, 2)
-rotation = 3.1415927
-shape = SubResource("WorldBoundaryShape2D_57qmd")
+[node name="Life2" type="TextureRect" parent="UI/HBoxContainer" unique_id=1238662403]
+layout_mode = 2
+texture = ExtResource("6_aoics")
+stretch_mode = 5
+
+[node name="Life3" type="TextureRect" parent="UI/HBoxContainer" unique_id=802939994]
+layout_mode = 2
+texture = ExtResource("6_aoics")
+stretch_mode = 5
+
+[node name="Overlay" type="CanvasLayer" parent="." unique_id=1194142961]
+
+[node name="ColorRect2" type="ColorRect" parent="Overlay" unique_id=1998336841]
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 1155.0
+offset_bottom = 648.0
+color = Color(0, 0, 0.078431375, 0.64705884)
+
+[node name="Message" type="Label" parent="Overlay/ColorRect2" unique_id=1132758598]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 268.0
+offset_right = 956.0
+offset_bottom = 335.0
+theme_override_font_sizes/font_size = 54
+horizontal_alignment = 1
+vertical_alignment = 1
