@@ -1,21 +1,40 @@
 [gd_scene format=3 uid="uid://btlitpu6o30of"]
 
-[ext_resource type="Texture2D" uid="uid://kfhly60qvs5y" path="res://icon.svg" id="2_0itxw"]
+[ext_resource type="Texture2D" uid="uid://cdpbbwkgn56x8" path="res://assets/sprites/minigames/GuidingBoat/wave_spritesheet.png" id="1_4tlhb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(124.54054, 115.569244)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_rpt7g"]
+atlas = ExtResource("1_4tlhb")
+region = Rect2(0, 0, 265, 753)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tywh"]
+atlas = ExtResource("1_4tlhb")
+region = Rect2(265, 0, 265, 753)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_quj04"]
+atlas = ExtResource("1_4tlhb")
+region = Rect2(530, 0, 265, 753)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5h11f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rpt7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tywh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_quj04")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
 [node name="StaticBody2D" type="StaticBody2D" unique_id=449539890]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2127749749]
-position = Vector2(-3, 43.999992)
-scale = Vector2(0.578125, 4.0624995)
-texture = ExtResource("2_0itxw")
-
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1612112503]
-position = Vector2(-2.3841858e-07, 744)
-scale = Vector2(0.578125, 4.375)
-texture = ExtResource("2_0itxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34446668]
 position = Vector2(-3.999999, 24.249996)
@@ -26,3 +45,15 @@ shape = SubResource("RectangleShape2D_g4v7s")
 position = Vector2(0, 769.5)
 scale = Vector2(0.57812494, 4.0624995)
 shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1361287134]
+position = Vector2(73, -109)
+sprite_frames = SubResource("SpriteFrames_5h11f")
+autoplay = "default"
+frame_progress = 0.67566043
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1395532259]
+position = Vector2(73, 907)
+sprite_frames = SubResource("SpriteFrames_5h11f")
+autoplay = "default"
+frame_progress = 0.24084054
