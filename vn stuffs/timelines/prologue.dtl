@@ -1,16 +1,19 @@
-[background arg="res://assets/sprites/krishark_prototype.png" fade="0.0"]
-join Seyche center [animation="Fade In Up" length="1.5" wait="true"]
-Seyche: FUCKK I NEED MY MOON BADDIE
-update Seyche left [move_time="1.0"]
-join Strymir right [animation="Slide From Right" length="1.0" wait="true"]
-Strymir: hi twin
-hewwo
+[background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
+join Seyche (Normal) center [animation="Bounce In" length="0.0"]
+[lspeed=0.8]...
+[lspeed=0.8]....
+"A child": [lspeed=0.5]...[lspeed=0.3]th[pause=1][lspeed=0.1]..u
+Seyche: [lspeed=0.5]...[lspeed=0.2]huh?
+"A child": Thank you so much!
+Seyche: [lspeed=0.1]What… [pause=0.2]just happened?
+A small high pitched voice could be heard from Goddess’s arms.
+"A child": Thank you so much for saving me, pretty lady!
 update Seyche [animation="Shake X"]
-update Seyche [animation="Shake Y"]
-update Seyche [animation="Heartbeat"]
-Seyche: who the fuh
-- hey its me its verity
-	Seyche: i guess bro
-- gurt
-	Seyche: yo
-leave --All--
+Seyche (Surprised): O-oh… [pause=0.2] yes? [pause=0.5] You’re welcome!
+"Civillian 1": You… [pause=0.5]have saved my daughter…
+"Civillian 2": From those waves and harsh tides[lspeed=0.3]... [pause=0.3][lspeed]Could it truly be…
+"Civillian 1": Have you finally returned to us, [pause=0.2]O Goddess of the sea?
+The Goddess turned her gaze towards the civilians.[pause=0.5]The words a mystery to her, but not entirely.[pause=0.5] A quiet thread of familiarity tugged her. [pause=0.5]Like a voice heard in a distant time.[pause=0.5] It didn’t make sense, but it felt like coming back home.
+"A child": Pretty lady… [pause=0.5]is a sea goddess?
+Seyche (Happy): *chuckles* [pause=1] Suppose I am.
+The word of her return spread among the people faster than the early snow of winter. Long forgotten temples began to stir with repairs and offerings were laid. Prayers, though still few, rose like incense toward the newly born goddess. Her work, it seemed, had already begun.

@@ -9,6 +9,7 @@ enum PositionModes {
 	SPEAKER,  ## This container is joined/left automatically based on the speaker.
 	}
 
+
 @export var mode := PositionModes.POSITION
 
 @export_subgroup('Mode: Position')
