@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+AudioManager="*uid://dsa6nado6xd5r"
+Utils="*uid://b8er3g5m4dx8f"
 
 [dialogic]
 
