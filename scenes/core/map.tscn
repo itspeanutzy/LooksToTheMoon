@@ -3,7 +3,13 @@
 [ext_resource type="Script" uid="uid://b5pm47y5i22g" path="res://scenes/core/map.gd" id="1_2klcf"]
 [ext_resource type="Texture2D" uid="uid://byco1r3ehv54k" path="res://assets/sprites/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png" id="1_4xfga"]
 [ext_resource type="PackedScene" uid="uid://chhfe0q4es5ks" path="res://scenes/core/settings.tscn" id="3_2lpho"]
-[ext_resource type="Script" uid="uid://bk2jmvj48xnk1" path="res://scenes/core/button.gd" id="3_gldc4"]
+
+[sub_resource type="GDScript" id="GDScript_8uyid"]
+script/source = "extends Button
+
+func _on_pressed() -> void:
+	Settings.open_settings()
+"
 
 [node name="map" type="Node2D" unique_id=120332078]
 script = ExtResource("1_2klcf")
@@ -24,7 +30,7 @@ process_mode = 3
 offset_right = 39.011047
 offset_bottom = 40.731766
 scale = Vector2(29.427557, 15.958061)
-color = Color(0, 0, 0, 1)
+color = Color(0, 0, 0, 0.627451)
 
 [node name="Button" type="Button" parent="CanvasGroup" unique_id=820585419]
 offset_left = 1027.9999
@@ -32,7 +38,7 @@ offset_top = 589.99994
 offset_right = 1135.9999
 offset_bottom = 641.99994
 text = "Settings"
-script = ExtResource("3_gldc4")
+script = SubResource("GDScript_8uyid")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=28299558]
 position = Vector2(576, 324)

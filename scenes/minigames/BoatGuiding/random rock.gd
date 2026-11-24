@@ -117,9 +117,9 @@ func _on_timer_timeout():
 
 # WAVE SPAWNING
 func _spawn_wave():
-	if boat and boat.is_knocked_back:
-		wave_timer.start(0.1)
-		return
+	#if boat and boat.is_knocked_back:
+	#	wave_timer.start(0.1)
+	#	return
 
 	var difficulty = min(elapsed_time / 90.0, 1.0)
 	var current_wave_speed = lerp(starting_speed, max_speed, difficulty)

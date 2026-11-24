@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dwid3ksjwi42r"]
+
+[ext_resource type="Script" uid="uid://b5pm47y5i22g" path="res://scenes/core/map.gd" id="1_2klcf"]
+[ext_resource type="Texture2D" uid="uid://byco1r3ehv54k" path="res://assets/sprites/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png" id="1_4xfga"]
+[ext_resource type="PackedScene" uid="uid://chhfe0q4es5ks" path="res://scenes/core/settings.tscn" id="3_2lpho"]
+
+[sub_resource type="GDScript" id="GDScript_8uyid"]
+script/source = "extends Button
+
+@onready var settings: Node2D = $\"../settings\"
+@onready var anim: AnimationPlayer = $AnimationPlayer
+
+func _on_pressed() -> void:
+	settings.show()
+	anim.play(\"open\")
+	get_tree().paused = true
+	
+"
+
+[node name="map" type="Node2D" unique_id=120332078]
+script = ExtResource("1_2klcf")
+
+[node name="BluePinkYellowPastelLineEnglishGraphicNovelConventionsPresentation_pdf" type="Sprite2D" parent="." unique_id=1027498257]
+position = Vector2(575.99994, 324)
+scale = Vector2(0.6000012, 0.6)
+texture = ExtResource("1_4xfga")
+
+[node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=1419798378]
+position = Vector2(0, -3.0517578e-05)
+scale = Vector2(1.0000001, 1.0000001)
+
+[node name="settings" parent="CanvasGroup" unique_id=286645141 instance=ExtResource("3_2lpho")]
+process_mode = 3
+
+[node name="fade" type="ColorRect" parent="CanvasGroup" unique_id=745143685]
+offset_right = 39.011047
+offset_bottom = 40.731766
+scale = Vector2(29.427557, 15.958061)
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="CanvasGroup" unique_id=820585419]
+offset_left = 1027.9999
+offset_top = 589.99994
+offset_right = 1135.9999
+offset_bottom = 641.99994
+text = "Settings"
+script = SubResource("GDScript_8uyid")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=28299558]
+position = Vector2(576, 324)
+
+[connection signal="pressed" from="CanvasGroup/Button" to="CanvasGroup/Button" method="_on_pressed"]
