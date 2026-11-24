@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cnk8ilhea23hh"]
 
 [ext_resource type="Script" uid="uid://jsonupx3l6be" path="res://scenes/minigames/BoatGuiding/finish_line.gd" id="1_1lvlm"]
-[ext_resource type="Texture2D" uid="uid://ci177cwvpv01n" path="res://assets/sprites/minigames/Group 110.png" id="1_5xwrx"]
+[ext_resource type="Texture2D" uid="uid://cpmqmgxdcqd3c" path="res://assets/sprites/minigames/GuidingBoat/island.png" id="2_7joyk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(16, 768)
@@ -10,7 +10,9 @@ size = Vector2(16, 768)
 script = ExtResource("1_1lvlm")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=164256433]
-texture = ExtResource("1_5xwrx")
+position = Vector2(294, 0)
+scale = Vector2(-1, -1)
+texture = ExtResource("2_7joyk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1818836833]
 position = Vector2(-2, -5)

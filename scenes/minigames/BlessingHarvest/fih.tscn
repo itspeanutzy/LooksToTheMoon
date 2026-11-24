@@ -1,7 +1,16 @@
 [gd_scene format=3 uid="uid://ihpp2k7oucbj"]
 
 [ext_resource type="Script" uid="uid://cqv8e4kp0giet" path="res://scenes/minigames/BlessingHarvest/fish_blshv.gd" id="1_efgbp"]
-[ext_resource type="Texture2D" uid="uid://cejk0t00ipqx4" path="res://assets/sprites/minigames/placeholder_fish.png" id="2_r46gl"]
+[ext_resource type="Texture2D" uid="uid://btkmavl3kic8a" path="res://assets/sprites/minigames/HarvestFish/fih.png" id="2_efgbp"]
+[ext_resource type="Shader" uid="uid://e2an42eeh3ui" path="res://resources/shaders/fih.gdshader" id="2_r46gl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l56ew"]
+shader = ExtResource("2_r46gl")
+shader_parameter/amplitude = 0.03
+shader_parameter/frequency = 10.0
+shader_parameter/speed = 10.0
+shader_parameter/flat_length = 0.146000006935
+shader_parameter/ramp_length = 0.5
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vivr"]
 radius = 13.0
@@ -11,8 +20,9 @@ height = 64.0
 script = ExtResource("1_efgbp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2109400413]
+material = SubResource("ShaderMaterial_l56ew")
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_r46gl")
+texture = ExtResource("2_efgbp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2045646175]
 position = Vector2(0, -3)

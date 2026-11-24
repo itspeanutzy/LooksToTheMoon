@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 Settings="*uid://chhfe0q4es5ks"
+AudioManager="*uid://dsa6nado6xd5r"
+Utils="*uid://b8er3g5m4dx8f"
 
 [dialogic]
 
@@ -74,8 +76,10 @@ audio/channel_defaults={
 
 [display]
 
+window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+mouse_cursor/custom_image="uid://bcd33o1onsd6n"
 
 [editor_plugins]
 
