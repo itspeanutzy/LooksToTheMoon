@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://1d8mvw2hcqj8" path="res://assets/sprites/Untitled design (1).png" id="1_5p8wc"]
 [ext_resource type="Script" uid="uid://bgu8ekdjoolic" path="res://scenes/core/settings.gd" id="1_n4f1f"]
 [ext_resource type="FontFile" uid="uid://cikimk87ijdl2" path="res://assets/fonts/Oregano-Italic.ttf" id="2_3iepn"]
+[ext_resource type="Theme" uid="uid://bq05iaqk744eu" path="res://resources/UI.tres" id="3_4vkxm"]
 
 [sub_resource type="Animation" id="Animation_n4f1f"]
 length = 0.001
@@ -56,6 +57,8 @@ _data = {
 &"slide_up": SubResource("Animation_4vkxm")
 }
 
+[sub_resource type="Theme" id="Theme_5nw3l"]
+
 [node name="settings" type="CanvasLayer" unique_id=157577427]
 script = ExtResource("1_n4f1f")
 
@@ -74,12 +77,13 @@ texture = ExtResource("1_5p8wc")
 libraries/ = SubResource("AnimationLibrary_4phbw")
 
 [node name="save" type="Button" parent="Control/Sprite2D" unique_id=1057662748]
-offset_left = -155.93596
-offset_top = -38.502743
-offset_right = 171.06404
-offset_bottom = 67.49725
+offset_left = -175.18718
+offset_top = -29.75402
+offset_right = 207.81282
+offset_bottom = 44.24598
+theme = ExtResource("3_4vkxm")
 theme_override_fonts/font = ExtResource("2_3iepn")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 32
 text = "Save Game"
 
 [node name="load" type="Button" parent="Control/Sprite2D" unique_id=2093971584]
@@ -87,6 +91,7 @@ offset_left = -155.93597
 offset_top = 88.55611
 offset_right = 173.06403
 offset_bottom = 194.5561
+theme = SubResource("Theme_5nw3l")
 theme_override_fonts/font = ExtResource("2_3iepn")
 theme_override_font_sizes/font_size = 75
 text = "Load Game"

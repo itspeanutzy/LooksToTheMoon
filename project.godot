@@ -85,6 +85,10 @@ mouse_cursor/custom_image="uid://bcd33o1onsd6n"
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
+[gui]
+
+theme/custom="uid://bq05iaqk744eu"
+
 [input]
 
 dialogic_default_action={
