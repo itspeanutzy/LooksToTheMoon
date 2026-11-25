@@ -78,7 +78,7 @@ audio/channel_defaults={
 
 [display]
 
-window/size/mode=2
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="uid://bv2qijiqb4qgq"
