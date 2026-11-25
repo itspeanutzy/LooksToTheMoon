@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c8ooga3l40g7q"]
 
 [ext_resource type="Script" uid="uid://76hap86fke8s" path="res://scenes/minigames/BoatGuiding/movement.gd" id="1_hjaqi"]
-[ext_resource type="Texture2D" uid="uid://br65p3v8jptws" path="res://assets/sprites/minigames/small_boat.png" id="2_bh456"]
+[ext_resource type="Texture2D" uid="uid://b5o081rhm2vo1" path="res://assets/sprites/minigames/GuidingBoat/boat.png" id="2_bh456"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
-radius = 48.04165
+radius = 21.095022
 
 [node name="boat" type="CharacterBody2D" unique_id=1029574646]
 script = ExtResource("1_hjaqi")

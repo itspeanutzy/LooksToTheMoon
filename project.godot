@@ -13,6 +13,8 @@ config_version=5
 config/name="Seyche'sDoomedRegression"
 run/main_scene="uid://snlrsnoqa5ev"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [autoload]
@@ -21,6 +23,8 @@ Dialogic="*uid://ds2q0uclmolvu"
 Settings="*uid://chhfe0q4es5ks"
 GameState="*uid://dst00c5k6xuha"
 HUD="*uid://bx8eio8x2guwo"
+AudioManager="*uid://dsa6nado6xd5r"
+Utils="*uid://b8er3g5m4dx8f"
 
 [dialogic]
 
@@ -86,12 +90,18 @@ history/simple_history_enabled=false
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+mouse_cursor/custom_image="uid://bv2qijiqb4qgq"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[gui]
+
+theme/custom="uid://bq05iaqk744eu"
 
 [input]
 

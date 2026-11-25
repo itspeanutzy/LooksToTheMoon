@@ -3,22 +3,28 @@
 [ext_resource type="Script" uid="uid://cekp4ksnbqrs4" path="res://scenes/minigames/BoatGuiding/guide_ship.gd" id="1_m4dej"]
 [ext_resource type="Script" uid="uid://d3k2f3mi070pu" path="res://scenes/minigames/BoatGuiding/random rock.gd" id="1_xvvxp"]
 [ext_resource type="PackedScene" uid="uid://c8ooga3l40g7q" path="res://scenes/minigames/BoatGuiding/boat.tscn" id="2_cb5u0"]
-[ext_resource type="Texture2D" uid="uid://cf2ua55n1rskk" path="res://assets/sprites/minigames/placeholder_water.png" id="2_dlwrd"]
+[ext_resource type="Shader" uid="uid://dyxlm74wappy" path="res://resources/shaders/water_move.gdshader" id="2_dlwrd"]
 [ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scenes/minigames/BoatGuiding/guide_a_ship_cam.gd" id="3_dlwrd"]
+[ext_resource type="Texture2D" uid="uid://beq1xdoat6e2o" path="res://assets/sprites/minigames/GuidingBoat/seascroll.png" id="4_cb5u0"]
 [ext_resource type="Script" uid="uid://vr2vjkn4ynm3" path="res://scenes/minigames/BoatGuiding/UI.gd" id="5_m4dej"]
 [ext_resource type="Texture2D" uid="uid://bkynij2oor6it" path="res://assets/sprites/minigames/Vector 1 1.png" id="6_aoics"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x6alv"]
+shader = ExtResource("2_dlwrd")
+shader_parameter/direction = Vector2(1, 0)
+shader_parameter/speed = 0.1
 
 [node name="Node2D" type="Node2D" unique_id=1178880898]
 script = ExtResource("1_m4dej")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1664915367]
+material = SubResource("ShaderMaterial_x6alv")
+position = Vector2(1152, 324)
+texture = ExtResource("4_cb5u0")
+
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=43475717]
 repeat_size = Vector2(1160, 0)
 autoscroll = Vector2(-200, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1664915367]
-position = Vector2(583, 336)
-scale = Vector2(0.909375, 0.91944444)
-texture = ExtResource("2_dlwrd")
 
 [node name="Spawner" type="Node2D" parent="." unique_id=742590405]
 script = ExtResource("1_xvvxp")
