@@ -4,6 +4,7 @@ extends Control
 @export var buttons: Control
 
 func _ready():
+	HUD.hide()
 	fade_rect.color.a = 0.0
 	for button: Button in buttons.get_children():
 		button.mouse_entered.connect(func():

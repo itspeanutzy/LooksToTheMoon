@@ -25,6 +25,7 @@ scale = Vector2(1.0000001, 1.0000001)
 
 [node name="settings" parent="CanvasGroup" unique_id=286645141 instance=ExtResource("3_2lpho")]
 process_mode = 3
+visible = false
 
 [node name="fade" type="ColorRect" parent="CanvasGroup" unique_id=1133793577]
 offset_right = 1154.9999
