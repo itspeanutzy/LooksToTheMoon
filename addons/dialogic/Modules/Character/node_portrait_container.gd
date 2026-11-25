@@ -163,6 +163,16 @@ func _get_origin_position(rect_size = null) -> Vector2:
 		rect_size = size
 	return rect_size * Vector2(origin_anchor%3 / 2.0, floor(origin_anchor/3.0) / 2.0) + origin_offset
 
+func _update_portrait(passed_character: DialogicCharacter, passed_portrait: String) -> void:
+	var info := passed_character.get_portrait_info(passed_portrait)
+
+	$Sprite2D.texture = load(info.get("image", ""))
+	$Sprite2D.hframes = info.get("hframes", 1)
+	$Sprite2D.vframes = info.get("vframes", 1)
+	$Sprite2D.frame = 0
+
+	$AnimationPlayer.stop()
+	$AnimationPlayer.play("idle")
 
 func is_container(id:Variant) -> bool:
 	return str(id) in container_ids

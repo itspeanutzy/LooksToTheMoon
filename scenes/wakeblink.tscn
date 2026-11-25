@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b3y3ndvnoqfgm"]
+
+[ext_resource type="Script" uid="uid://d0elaps4cn71f" path="res://scripts/wakeblink.gd" id="1_07usc"]
+[ext_resource type="Shader" uid="uid://d2yvgc31x5kug" path="res://scenes/blur.gdshader" id="2_uufc6"]
+[ext_resource type="Shader" uid="uid://gffnsg32tm3x" path="res://scenes/motion blur.gdshader" id="3_s5hts"]
+
+[sub_resource type="GDScript" id="GDScript_yf5fn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g4v7s"]
+shader = ExtResource("2_uufc6")
+shader_parameter/radius = 12.0
+script = SubResource("GDScript_yf5fn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_47k15"]
+shader = ExtResource("3_s5hts")
+shader_parameter/blur_amount = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rgk7f"]
+shader = ExtResource("3_s5hts")
+shader_parameter/blur_amount = 0.0
+
+[node name="Wakeblink" type="Control" unique_id=1398109204]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_07usc")
+
+[node name="BlurRect" type="ColorRect" parent="." unique_id=1963224314]
+material = SubResource("ShaderMaterial_g4v7s")
+layout_mode = 0
+offset_right = 1181.0
+offset_bottom = 669.0
+
+[node name="TopLid" type="ColorRect" parent="." unique_id=333686695]
+material = SubResource("ShaderMaterial_47k15")
+layout_mode = 0
+offset_right = 1157.0
+offset_bottom = 333.0
+color = Color(0, 0, 0, 1)
+
+[node name="BottomLid" type="ColorRect" parent="." unique_id=627365967]
+material = SubResource("ShaderMaterial_rgk7f")
+layout_mode = 0
+offset_left = -15.0
+offset_top = 324.0
+offset_right = 1204.0
+offset_bottom = 643.0
+color = Color(0, 0, 0, 1)

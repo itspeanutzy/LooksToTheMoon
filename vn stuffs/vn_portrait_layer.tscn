@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bc3vrga8bte3u"]
+[gd_scene format=3 uid="uid://dvpqelci1uxng"]
 
 [ext_resource type="Script" uid="uid://cx1i44s2olq2d" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.gd" id="1_6l4vg"]
 [ext_resource type="Script" uid="uid://d0ptqnbudhkyj" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="2_kpbpl"]
@@ -12,8 +12,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_6l4vg")
-unfocused_scale = null
-transition_duration = null
 
 [node name="Portraits" type="Control" parent="." unique_id=1618479447]
 unique_name_in_owner = true
