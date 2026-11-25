@@ -21,7 +21,7 @@ func _on_load_pressed():
 	pass
 
 func _on_settings_pressed():
-	_change_scene_with_fade("res://scenes/core/settings.tscn")
+	Settings.open_settings()
 
 func _on_credit_pressed():
 	pass

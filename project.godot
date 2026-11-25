@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 Settings="*uid://chhfe0q4es5ks"
+GameState="*uid://dst00c5k6xuha"
+HUD="*uid://bx8eio8x2guwo"
 
 [dialogic]
 

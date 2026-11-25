@@ -26,11 +26,10 @@ scale = Vector2(1.0000001, 1.0000001)
 [node name="settings" parent="CanvasGroup" unique_id=286645141 instance=ExtResource("3_2lpho")]
 process_mode = 3
 
-[node name="fade" type="ColorRect" parent="CanvasGroup" unique_id=745143685]
-offset_right = 39.011047
-offset_bottom = 40.731766
-scale = Vector2(29.427557, 15.958061)
-color = Color(0, 0, 0, 0.627451)
+[node name="fade" type="ColorRect" parent="CanvasGroup" unique_id=1133793577]
+offset_right = 1154.9999
+offset_bottom = 650.99994
+color = Color(0, 0, 0, 0.40392157)
 
 [node name="Button" type="Button" parent="CanvasGroup" unique_id=820585419]
 offset_left = 1027.9999

@@ -17,7 +17,6 @@ func open_settings():
 	get_tree().paused = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
-# --- UBAH BAGIAN INI ---
 func close_settings():
 	anim.play("slide_down")
 	await anim.animation_finished

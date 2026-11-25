@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bx8eio8x2guwo"]
+
+[ext_resource type="Script" uid="uid://bxvruhvmao3wv" path="res://scenes/core/mainhud.gd" id="1_aolgp"]
+[ext_resource type="FontFile" uid="uid://c5snfvev1ffim" path="res://assets/fonts/Oregano-Regular.ttf" id="2_8i633"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1774544715]
+script = ExtResource("1_aolgp")
+
+[node name="FaithLabel" type="Label" parent="." unique_id=1405629776]
+offset_left = 33.0
+offset_top = 90.0
+offset_right = 311.0
+offset_bottom = 139.0
+theme_override_fonts/font = ExtResource("2_8i633")
+theme_override_font_sizes/font_size = 36
+
+[node name="ProsperityLabel" type="Label" parent="." unique_id=1216724482]
+offset_left = 35.0
+offset_top = 23.0
+offset_right = 313.0
+offset_bottom = 72.0
+theme_override_fonts/font = ExtResource("2_8i633")
+theme_override_font_sizes/font_size = 36

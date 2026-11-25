@@ -9,7 +9,7 @@ extends Node2D
 var time_left: float
 var climax_triggered = false
 
-enum GameState {INTRO, COUNTDOWN, PLAYING, END}
+enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
 var current_state = GameState.INTRO
 
 func _ready() -> void:
@@ -19,15 +19,16 @@ func _ready() -> void:
 	$SpawnTimer.timeout.connect(_on_spawn_timer_timeout)
 	$Coast.add_to_group("Base")
 	$Coast.base_destroyed.connect(_on_base_destroyed)
+	HUD.hide()
 	
 	show_message("Click anywhere to continue")
 
 func _input(event: InputEvent) -> void:
-	if current_state == GameState.INTRO and event.is_pressed() and event is InputEventMouseButton:
+	if current_state == MinigameState.INTRO and event.is_pressed() and event is InputEventMouseButton:
 		start_countdown()
 
 func start_countdown() -> void:
-	current_state = GameState.COUNTDOWN
+	current_state = MinigameState.COUNTDOWN
 	_do_countdown()
 
 func _do_countdown():
@@ -41,7 +42,7 @@ func _do_countdown():
 	overlay.hide()
 	$HUD.show()
 	time_left = survive_timer
-	current_state = GameState.PLAYING
+	current_state = MinigameState.PLAYING
 	
 	$SurviveTimer.start()
 	$SpawnTimer.start()
@@ -51,7 +52,7 @@ func show_message(text: String) -> void:
 	message_label.text = text
 
 func _process(_delta: float) -> void:
-	if current_state == GameState.PLAYING:
+	if current_state == MinigameState.PLAYING:
 		time_left = $SurviveTimer.time_left
 		time_label.text = "Time: " + str(int(time_left))
 		if $Coast:
@@ -62,7 +63,7 @@ func _process(_delta: float) -> void:
 			$SpawnTimer.wait_time = $SpawnTimer.wait_time / 2.0
 
 func _on_spawn_timer_timeout() -> void:
-	if current_state != GameState.PLAYING: return
+	if current_state != MinigameState.PLAYING: return
 	var new_boat = enemy_scene.instantiate()
 	var random_y = randf_range(100, 600)
 	new_boat.global_position = Vector2(1100, random_y)
@@ -75,15 +76,18 @@ func _on_base_destroyed() -> void:
 	end_minigame(false)
 
 func end_minigame(is_win: bool) -> void:
-	current_state = GameState.END
+	current_state = MinigameState.END
 	$HUD.hide()
 	$SpawnTimer.stop()
 	$SurviveTimer.stop()
+	HUD.show()
 	
 	if is_win:
 		show_message("The Coast is Clear")
+		GameState.add_faith(50)
 	else:
 		show_message("Krishark Coast has Fallen!!")
+		GameState.add_faith(10)
 		
 	for enemy in get_tree().get_nodes_in_group("Enemy"):
 		enemy.queue_free()

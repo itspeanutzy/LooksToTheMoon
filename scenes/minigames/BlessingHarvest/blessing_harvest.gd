@@ -12,19 +12,20 @@ var time_left: float = 0
 @onready var overlay = $OverlayLayer
 @onready var message_label = $OverlayLayer/ColorRect/Message
 
-enum GameState {INTRO, COUNTDOWN, PLAYING, END}
+enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
 var current_state = GameState.INTRO
 
 func _ready() -> void:
+	HUD.hide()
 	$HUD.hide()
 	show_message("Click anywhere to continue")
 
 func _input(event: InputEvent) -> void:
-	if current_state == GameState.INTRO  and event.is_pressed() and event is InputEventMouseButton:
+	if current_state == MinigameState.INTRO  and event.is_pressed() and event is InputEventMouseButton:
 		start_countdown()
 
 func start_countdown() -> void:
-	current_state = GameState.COUNTDOWN
+	current_state = MinigameState.COUNTDOWN
 	_do_countdown()
 	
 func _do_countdown():
@@ -56,7 +57,7 @@ func spawn_fish() -> void:
 		add_child(new_fish)
 
 func _process(delta: float) -> void:
-	if current_state == GameState.PLAYING:
+	if current_state == MinigameState.PLAYING:
 		time_left -= delta
 		$HUD/Timer.text = "Time: " + str(int(time_left))
 		
@@ -74,13 +75,17 @@ func _on_boat_area_entered(area: Area2D) -> void:
 			end_minigame(true)
 
 func end_minigame(is_win: bool) -> void:
-	current_state = GameState.END
+	current_state = MinigameState.END
 	$HUD.hide()
+	HUD.show()
 	
 	if is_win:
 		show_message("The Harvest was Bountiful!")
+		GameState.add_faith(50)
 	else:
 		show_message("And the Sea stay still")
+		GameState.add_faith(10)
 	
 	for fish in get_tree().get_nodes_in_group("Fish"):
 		fish.queue_free()
+	

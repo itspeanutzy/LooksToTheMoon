@@ -10,11 +10,12 @@ extends Node2D
 var level_timer: Timer
 const FinishLineScene = preload("res://scenes/minigames/BoatGuiding/FinishLine.tscn") # Sesuaikan path-nya!
 
-enum GameState {INTRO, PLAYING, GAMEOVER, WIN}
-var current_state = GameState.INTRO
+enum MinigameState {INTRO, PLAYING, GAMEOVER, WIN}
+var current_state = MinigameState.INTRO
 
 func _ready():
 	add_to_group("game_manager")
+	HUD.hide()
 	ui.hide()
 	spawner.timer.stop()
 	spawner.wave_timer.stop()
@@ -32,11 +33,11 @@ func _ready():
 	show_message("Guide the Ship!\nClick anywhere to start")
 
 func _input(event):
-	if current_state == GameState.INTRO and event is InputEventMouseButton and event.pressed:
+	if current_state == MinigameState.INTRO and event is InputEventMouseButton and event.pressed:
 		start_game()
 
 func start_game():
-	current_state = GameState.PLAYING
+	current_state = MinigameState.PLAYING
 	overlay.hide()
 	ui.show()
 	boat.set_physics_process(true)
@@ -60,23 +61,28 @@ func _on_level_timer_timeout():
 	add_child(finish_line)
 
 func win_game():
-	if current_state != GameState.PLAYING: return
+	if current_state != MinigameState.PLAYING: return
 	
-	current_state = GameState.WIN
+	current_state = MinigameState.WIN
 	ui.hide()
 	boat.set_physics_process(false)
 	
+	HUD.show()
+	
 	show_message("The Ship Sailed Safely!!!")
+	GameState.add_faith(100)
 
 func _on_boat_destroyed():
-	if current_state != GameState.PLAYING: return
+	if current_state != MinigameState.PLAYING: return
 	
-	current_state = GameState.GAMEOVER
+	current_state = MinigameState.GAMEOVER
 	ui.hide()
 	boat.set_physics_process(false)
 	spawner.timer.stop()
 	spawner.wave_timer.stop()
 	spawner.set_process(false)
+	
+	HUD.show()
 	
 	for rock in get_tree().get_nodes_in_group("rocks"): rock.queue_free()
 	for wave in get_tree().get_nodes_in_group("waves"): wave.queue_free()

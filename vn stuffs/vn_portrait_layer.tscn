@@ -12,8 +12,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_6l4vg")
-unfocused_scale = null
-transition_duration = null
 
 [node name="Portraits" type="Control" parent="." unique_id=1618479447]
 unique_name_in_owner = true
