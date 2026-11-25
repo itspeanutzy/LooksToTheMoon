@@ -1,0 +1,28 @@
+join Ermir right [animation="Bounce In" length="0.0"]
+join Seyche left [animation="Bounce In" length="0.0"]
+[wait time="2.0"]
+Ermir (Laugh): Hah! You still haven’t lost your spark huh Seyche?
+Seyche: Whew- that was pretty challenging though...
+Ermir: Pfft yeah, this is nothing compared to my brother.
+Seyche (Surprised): You have a brother?...
+Ermir (Bored): Of course I do! Styrmir? The grumpy guy, big wings... Beard?
+Ermir: Don’t tell me you forgot
+update Seyche (Normal)
+[wait time="2.0"]
+Ermir: OH my god you forgot.
+Ermir (Neutral): That is so...
+He seemed serious for a bit.
+Ermir (Laugh): Hilarious! Phahahahahahahahahah!
+Ermir: Oh... Styrmir must be EMBARRASSED from what he did!
+Seyche (Uncomfortable): I’m sorry, I don’t quite follow?...
+update Ermir (Smug)
+[wait time="1.0"]
+Ermir: Try asking that one moon lady, whats her name..? Selyssha?
+Seyche (Normal): Celyna.
+Ermir (Laugh): Right! Her. Try asking her.
+Seyche: What does Celyna know about Strymir?
+Ermir (Neutral): Trust me, she knows way more than she lets on.
+Ermir (Laugh): Welp! Gotta go, my worshippers just built a cool flying machine, HAH! They’re becoming more and more like birds!
+Seyche (Surprised): Huh-! Hold on-... well there he goes..
+Seyche: Wait, how did he know my name?...
+jump cycle3end2/

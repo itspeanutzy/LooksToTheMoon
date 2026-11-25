@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch4dgyndc48h8"
-path="res://.godot/imported/styrmir_normal.png-12492cc627bc64b5eace5a2a79777328.ctex"
+uid="uid://4utuhcxesm40"
+path="res://.godot/imported/styrmir_defeated.png-a3dd6451fa9f55b582b02c4a37185830.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Strymir/styrmir_normal.png"
-dest_files=["res://.godot/imported/styrmir_normal.png-12492cc627bc64b5eace5a2a79777328.ctex"]
+source_file="res://assets/sprites/visualnovel/Strymir/styrmir_defeated.png"
+dest_files=["res://.godot/imported/styrmir_defeated.png-a3dd6451fa9f55b582b02c4a37185830.ctex"]
 
 [params]
 

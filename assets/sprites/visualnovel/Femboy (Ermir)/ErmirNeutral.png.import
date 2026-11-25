@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ntlko8sak58v"
-path="res://.godot/imported/styrmir_mad.png-4528a7537f90a50e4901400b9014cc5a.ctex"
+uid="uid://b1yd2ewd4lh87"
+path="res://.godot/imported/ErmirNeutral.png-bc782e011a5a4a68d3f953d19419c86f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Strymir/styrmir_mad.png"
-dest_files=["res://.godot/imported/styrmir_mad.png-4528a7537f90a50e4901400b9014cc5a.ctex"]
+source_file="res://assets/sprites/visualnovel/Femboy (Ermir)/ErmirNeutral.png"
+dest_files=["res://.godot/imported/ErmirNeutral.png-bc782e011a5a4a68d3f953d19419c86f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4utuhcxesm40"
-path="res://.godot/imported/styrmir_defeated.png-874d9311319c6f7841260848d77455fd.ctex"
+uid="uid://bxiqwchayrhnx"
+path="res://.godot/imported/ErmirSmug.png-7a8cd304bc3c02e714551a53f90c4fb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Strymir/styrmir_defeated.png"
-dest_files=["res://.godot/imported/styrmir_defeated.png-874d9311319c6f7841260848d77455fd.ctex"]
+source_file="res://assets/sprites/visualnovel/Femboy (Ermir)/ErmirSmug.png"
+dest_files=["res://.godot/imported/ErmirSmug.png-7a8cd304bc3c02e714551a53f90c4fb8.ctex"]
 
 [params]
 

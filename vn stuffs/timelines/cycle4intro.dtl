@@ -1,0 +1,22 @@
+[background arg="res://assets/backgrounds/Krishark Sea Stormy.png" fade="0.0"]
+join Seyche left
+join Strymir right
+Strymir: So you do dare to return?
+Seyche (Surprised): You! You’re...
+Seyche (Normal): You’re.. Styrmir..
+Strymir: Correct. At least your mind is still intact. Seyche.
+Seyche (Uncomfortable): I.. Y-yes of course it is. Sir. Why wouldn’t it be?
+Strymir (Cussing): Don’t act coy with me, woman! Last time we’ve met you acted with so little dignity and respect, it disgust me.
+Seyche: What?... I..
+Seyche (Normal): Sir,
+Seyche: I’m not who I was before. I changed!
+update Strymir (Mad)
+[wait time="2.0"]
+Seyche: I-.. People go up to me and expect this Seyche from before but I’m NOT her
+Strymir: ... Prove it.
+Seyche (Uncomfortable): I don’t even- What?
+Strymir: If you’ve changed. Prove it to me.
+Seyche: ...
+Seyche: ...How do I prove it.
+Strymir: These storms will be hard on every mortal on the sea. Help them.
+Seyche (Normal): Yes sir.
