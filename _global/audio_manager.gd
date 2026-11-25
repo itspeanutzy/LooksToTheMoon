@@ -35,8 +35,8 @@ const MUSIC_BUS: StringName = &"Music"
 # ---------------------------------------------------------------------------
 
 @export_group("Folder Scan Paths")
-@export var sfx_folder_path: String = "res://asset/audio/sfx/"
-@export var music_folder_path: String = "res://asset/audio/music/"
+@export var sfx_folder_path: String = "res://assets/audio/sfx/"
+@export var music_folder_path: String = "res://assets/audio/music/"
 
 @export_group("Pool Configuration")
 @export var sfx_pool_size: int = 16
