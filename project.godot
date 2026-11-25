@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="Seyche'sDoomedRegression"
+run/main_scene="uid://snlrsnoqa5ev"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+Settings="*uid://chhfe0q4es5ks"
 
 [dialogic]
 
@@ -25,6 +27,7 @@ directories/dch_directory={
 "Celyna": "res://vn stuffs/characters/Celyna.dch",
 "Civillian 1": "res://vn stuffs/characters/Civillian 1.dch",
 "Civillian 2": "res://vn stuffs/characters/Civillian 2.dch",
+"Ermir": "res://vn stuffs/characters/Ermir.dch",
 "Fisherman": "res://vn stuffs/characters/Fisherman.dch",
 "Narrator": "res://vn stuffs/characters/Narrator.dch",
 "Seyche": "res://vn stuffs/characters/Seyche.dch",
@@ -34,6 +37,11 @@ directories/dtl_directory={
 "cycle1": "res://vn stuffs/timelines/cycle1.dtl",
 "cycle2end": "res://vn stuffs/timelines/cycle2end.dtl",
 "cycle2intro": "res://vn stuffs/timelines/cycle2intro.dtl",
+"cycle3end": "res://vn stuffs/timelines/cycle3end.dtl",
+"cycle3end2": "res://vn stuffs/timelines/cycle3end2.dtl",
+"cycle3intro": "res://vn stuffs/timelines/cycle3intro.dtl",
+"cycle4end": "res://vn stuffs/timelines/cycle4end.dtl",
+"cycle4intro": "res://vn stuffs/timelines/cycle4intro.dtl",
 "prologue": "res://vn stuffs/timelines/prologue.dtl"
 }
 layout/style_directory={

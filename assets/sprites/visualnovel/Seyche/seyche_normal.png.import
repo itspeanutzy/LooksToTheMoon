@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmsld5p8y1qdr"
-path="res://.godot/imported/styrmir_contemplate.png-72682106d426192bb832873440cfb84c.ctex"
+uid="uid://cq40h0nff3mg"
+path="res://.godot/imported/seyche_normal.png-00e1c966172f704d4bf9857816897ae1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Strymir/styrmir_contemplate.png"
-dest_files=["res://.godot/imported/styrmir_contemplate.png-72682106d426192bb832873440cfb84c.ctex"]
+source_file="res://assets/sprites/visualnovel/Seyche/seyche_normal.png"
+dest_files=["res://.godot/imported/seyche_normal.png-00e1c966172f704d4bf9857816897ae1.ctex"]
 
 [params]
 

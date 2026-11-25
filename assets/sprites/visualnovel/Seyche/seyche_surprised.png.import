@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3l7qysmw1wj2"
-path="res://.godot/imported/styrmir_cussing.png-d35d951ee05784092409a4bded6af179.ctex"
+uid="uid://bp0sehm5j6acp"
+path="res://.godot/imported/seyche_surprised.png-e03f32c22cb3fd8b6df89a34f4628de8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Strymir/styrmir_cussing.png"
-dest_files=["res://.godot/imported/styrmir_cussing.png-d35d951ee05784092409a4bded6af179.ctex"]
+source_file="res://assets/sprites/visualnovel/Seyche/seyche_surprised.png"
+dest_files=["res://.godot/imported/seyche_surprised.png-e03f32c22cb3fd8b6df89a34f4628de8.ctex"]
 
 [params]
 

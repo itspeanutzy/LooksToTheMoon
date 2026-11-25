@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq40h0nff3mg"
-path="res://.godot/imported/seyche_normal.png-fa83eec4e2ec76c0568865d3e1041c33.ctex"
+uid="uid://bwm3hpp2wrxo2"
+path="res://.godot/imported/ErmirBored.png-daa20059ea8624ad70c73ffc5bd9be7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Seyche/seyche_normal.png"
-dest_files=["res://.godot/imported/seyche_normal.png-fa83eec4e2ec76c0568865d3e1041c33.ctex"]
+source_file="res://assets/sprites/visualnovel/Femboy (Ermir)/ErmirBored.png"
+dest_files=["res://.godot/imported/ErmirBored.png-daa20059ea8624ad70c73ffc5bd9be7f.ctex"]
 
 [params]
 

@@ -10,7 +10,7 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Styrmir Normal",
+&"default_portrait": "Contemplate",
 &"description": "",
 &"display_name": "Strymir",
 &"mirror": false,
@@ -19,7 +19,7 @@
 &"portraits": {
 "Contemplate": {
 "export_overrides": {
-"image": "\"res://assets/sprites/Strymir/styrmir_contemplate.png\""
+"image": "\"res://assets/sprites/visualnovel/Strymir/styrmir_contemplate.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -28,7 +28,7 @@
 },
 "Cussing": {
 "export_overrides": {
-"image": "\"res://assets/sprites/Strymir/styrmir_cussing.png\""
+"image": "\"res://assets/sprites/visualnovel/Strymir/styrmir_cussing.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -37,7 +37,7 @@
 },
 "Defeated": {
 "export_overrides": {
-"image": "\"res://assets/sprites/Strymir/styrmir_defeated.png\""
+"image": "\"res://assets/sprites/visualnovel/Strymir/styrmir_defeated.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -46,16 +46,16 @@
 },
 "Mad": {
 "export_overrides": {
-"image": "\"res://assets/sprites/Strymir/styrmir_mad.png\""
+"image": "\"res://assets/sprites/visualnovel/Strymir/styrmir_mad.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"Styrmir Normal": {
+"Normal": {
 "export_overrides": {
-"image": "\"res://assets/sprites/Strymir/styrmir_normal.png\""
+"image": "\"res://assets/sprites/visualnovel/Strymir/styrmir_normal.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

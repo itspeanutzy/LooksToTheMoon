@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds6bxup6i7vrx"
-path="res://.godot/imported/seyche_uncomfortable.png-781d32c46cd7f8f08a5c12b43763c10e.ctex"
+uid="uid://bxiqwchayrhnx"
+path="res://.godot/imported/ErmirSmug.png-7a8cd304bc3c02e714551a53f90c4fb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Seyche/seyche_uncomfortable.png"
-dest_files=["res://.godot/imported/seyche_uncomfortable.png-781d32c46cd7f8f08a5c12b43763c10e.ctex"]
+source_file="res://assets/sprites/visualnovel/Femboy (Ermir)/ErmirSmug.png"
+dest_files=["res://.godot/imported/ErmirSmug.png-7a8cd304bc3c02e714551a53f90c4fb8.ctex"]
 
 [params]
 
