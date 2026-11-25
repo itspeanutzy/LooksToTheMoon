@@ -13,6 +13,8 @@ config_version=5
 config/name="Seyche'sDoomedRegression"
 run/main_scene="uid://snlrsnoqa5ev"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [autoload]
@@ -79,7 +81,7 @@ audio/channel_defaults={
 window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-mouse_cursor/custom_image="uid://bcd33o1onsd6n"
+mouse_cursor/custom_image="uid://bv2qijiqb4qgq"
 
 [editor_plugins]
 
