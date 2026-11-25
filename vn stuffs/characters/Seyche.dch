@@ -7,24 +7,60 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "",
+"style": "style",
 "suffix": ""
 },
-&"default_portrait": "Seyche Normal",
+&"default_portrait": "Normal",
 &"description": "masih placeholder y guys i wanna test shit out",
-&"display_name": "Seyche",
+&"display_name": "{seyche_name_hidden}",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Seyche Normal": {
+"Happy": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Seyche/seyche_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.86,
+"scene": ""
+},
+"Normal": {
 "export_overrides": {
 "image": "\"res://assets/sprites/visualnovel/Seyche/seyche_normal.png\""
 },
 "ignore_char_scale": false,
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.8,
+"scale": 0.86,
+"scene": ""
+},
+"Sad": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Seyche/seyche_sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.86,
+"scene": ""
+},
+"Surprised": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Seyche/seyche_surprised.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.86,
+"scene": ""
+},
+"Uncomfortable": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Seyche/seyche_uncomfortable.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.86,
 "scene": ""
 }
 },

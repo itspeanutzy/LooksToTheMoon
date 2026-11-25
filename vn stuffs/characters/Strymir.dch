@@ -1,0 +1,67 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Styrmir Normal",
+&"description": "",
+&"display_name": "Strymir",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Contemplate": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Strymir/styrmir_contemplate.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Cussing": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Strymir/styrmir_cussing.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Defeated": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Strymir/styrmir_defeated.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Mad": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Strymir/styrmir_mad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Styrmir Normal": {
+"export_overrides": {
+"image": "\"res://assets/sprites/Strymir/styrmir_normal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}
