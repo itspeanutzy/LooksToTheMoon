@@ -25,12 +25,15 @@ directories/dch_directory={
 "Celyna": "res://vn stuffs/characters/Celyna.dch",
 "Civillian 1": "res://vn stuffs/characters/Civillian 1.dch",
 "Civillian 2": "res://vn stuffs/characters/Civillian 2.dch",
+"Fisherman": "res://vn stuffs/characters/Fisherman.dch",
 "Narrator": "res://vn stuffs/characters/Narrator.dch",
 "Seyche": "res://vn stuffs/characters/Seyche.dch",
 "Strymir": "res://vn stuffs/characters/Strymir.dch"
 }
 directories/dtl_directory={
 "cycle1": "res://vn stuffs/timelines/cycle1.dtl",
+"cycle2end": "res://vn stuffs/timelines/cycle2end.dtl",
+"cycle2intro": "res://vn stuffs/timelines/cycle2intro.dtl",
 "prologue": "res://vn stuffs/timelines/prologue.dtl"
 }
 layout/style_directory={
