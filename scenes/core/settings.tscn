@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://chhfe0q4es5ks"]
 
-[ext_resource type="Texture2D" uid="uid://1d8mvw2hcqj8" path="res://assets/sprites/Untitled design (1).png" id="1_5p8wc"]
-[ext_resource type="Script" uid="uid://bgu8ekdjoolic" path="res://scenes/core/settings.gd" id="1_n4f1f"]
+[ext_resource type="Script" uid="uid://bufuu6ep0hky6" path="res://scenes/core/settings.gd" id="1_n4f1f"]
+[ext_resource type="Texture2D" uid="uid://du1b7x3ejwpm1" path="res://assets/sprites/ui/Settings/Settings Box.png" id="2_1fu6o"]
 [ext_resource type="FontFile" uid="uid://cikimk87ijdl2" path="res://assets/fonts/Oregano-Italic.ttf" id="2_3iepn"]
-[ext_resource type="Theme" uid="uid://bq05iaqk744eu" path="res://resources/UI.tres" id="3_4vkxm"]
+[ext_resource type="Texture2D" uid="uid://b6au1b8oimr7p" path="res://assets/sprites/ui/Settings/Main Menu Button.png" id="4_srle4"]
+[ext_resource type="Script" uid="uid://ccfmw32nj5qt" path="res://scenes/core/hover_enlarge.gd" id="5_gndyg"]
+[ext_resource type="Texture2D" uid="uid://b225xysgjm3ct" path="res://assets/sprites/ui/Settings/Back Button.png" id="6_58g32"]
 
 [sub_resource type="Animation" id="Animation_n4f1f"]
 length = 0.001
@@ -57,7 +59,25 @@ _data = {
 &"slide_up": SubResource("Animation_4vkxm")
 }
 
-[sub_resource type="Theme" id="Theme_5nw3l"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cq22"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pove5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xoqpn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jcqb6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_37w2j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4v7s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yf5fn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57qmd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d0u6y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gngh"]
 
 [node name="settings" type="CanvasLayer" unique_id=157577427]
 script = ExtResource("1_n4f1f")
@@ -71,89 +91,65 @@ offset_bottom = 40.0
 [node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1556894403]
 position = Vector2(576, 342)
 scale = Vector2(0.5194444, 0.51944447)
-texture = ExtResource("1_5p8wc")
+texture = ExtResource("2_1fu6o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Control/Sprite2D" unique_id=1418879756]
 libraries/ = SubResource("AnimationLibrary_4phbw")
 
-[node name="save" type="Button" parent="Control/Sprite2D" unique_id=1057662748]
-offset_left = -175.18718
-offset_top = -29.75402
-offset_right = 207.81282
-offset_bottom = 44.24598
-theme = ExtResource("3_4vkxm")
-theme_override_fonts/font = ExtResource("2_3iepn")
-theme_override_font_sizes/font_size = 32
-text = "Save Game"
-
-[node name="load" type="Button" parent="Control/Sprite2D" unique_id=2093971584]
-offset_left = -155.93597
-offset_top = 88.55611
-offset_right = 173.06403
-offset_bottom = 194.5561
-theme = SubResource("Theme_5nw3l")
-theme_override_fonts/font = ExtResource("2_3iepn")
-theme_override_font_sizes/font_size = 75
-text = "Load Game"
-
 [node name="backtomenu" type="Button" parent="Control/Sprite2D" unique_id=871434884]
-offset_left = -167.48677
-offset_top = 215.61493
-offset_right = 184.51323
-offset_bottom = 321.61493
+offset_left = -242.56683
+offset_top = 198.28879
+offset_right = 246.41718
+offset_bottom = 304.1711
 theme_override_fonts/font = ExtResource("2_3iepn")
 theme_override_font_sizes/font_size = 75
-text = "Main Menu "
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2cq22")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pove5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xoqpn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jcqb6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_37w2j")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Sprite2D/backtomenu" unique_id=915463019]
+position = Vector2(289.4062, 70.98881)
+scale = Vector2(1.0002244, 1.0002242)
+texture = ExtResource("4_srle4")
+script = ExtResource("5_gndyg")
 
 [node name="return" type="Button" parent="Control/Sprite2D" unique_id=373733344]
-offset_left = -308.0215
-offset_top = 354.22455
-offset_right = -193.02151
-offset_bottom = 434.22455
+offset_left = -315.72195
+offset_top = 236.79147
+offset_right = -225.24069
+offset_bottom = 313.79672
 theme_override_fonts/font = ExtResource("2_3iepn")
 theme_override_font_sizes/font_size = 55
-text = "Back"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g4v7s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yf5fn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_57qmd")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_d0u6y")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3gngh")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control/Sprite2D/return" unique_id=1456475948]
+position = Vector2(44.278076, 38.502563)
+scale = Vector2(1.0331544, 1.0331541)
+texture = ExtResource("6_58g32")
+script = ExtResource("5_gndyg")
 
 [node name="BGM" type="HSlider" parent="Control/Sprite2D" unique_id=1979111134]
-offset_left = -234.86646
-offset_top = -186.73804
-offset_right = 271.44354
-offset_bottom = -161.73804
+offset_left = -284.91983
+offset_top = -88.55615
+offset_right = 282.99466
+offset_bottom = -63.556152
 max_value = 1.0
 step = 0.01
-
-[node name="BGMLabel" type="Label" parent="Control/Sprite2D/BGM" unique_id=1851123319]
-layout_mode = 0
-offset_left = 9.6256695
-offset_top = -44.278076
-offset_right = 320.62567
-offset_bottom = 4.721924
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_3iepn")
-theme_override_font_sizes/font_size = 35
-text = "Background Music"
 
 [node name="SFX" type="HSlider" parent="Control/Sprite2D" unique_id=894190254]
-offset_left = -234.86646
-offset_top = -111.657814
-offset_right = 271.44354
-offset_bottom = -95.657814
+offset_left = -284.91983
+offset_top = 82.78075
+offset_right = 282.99472
+offset_bottom = 98.78075
 max_value = 1.0
 step = 0.01
 
-[node name="SFXLabel" type="Label" parent="Control/Sprite2D/SFX" unique_id=406228346]
-layout_mode = 0
-offset_left = 7.700513
-offset_top = -46.203213
-offset_right = 318.7005
-offset_bottom = 2.7967873
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_3iepn")
-theme_override_font_sizes/font_size = 35
-text = "Sound Effect"
-
-[connection signal="pressed" from="Control/Sprite2D/save" to="." method="_on_save_pressed"]
-[connection signal="pressed" from="Control/Sprite2D/load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="Control/Sprite2D/backtomenu" to="." method="_on_backtomenu_pressed"]
 [connection signal="pressed" from="Control/Sprite2D/return" to="." method="_on_return_pressed"]
 [connection signal="value_changed" from="Control/Sprite2D/BGM" to="." method="_on_bgm_value_changed"]
