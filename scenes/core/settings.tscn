@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b6au1b8oimr7p" path="res://assets/sprites/ui/Settings/Main Menu Button.png" id="4_srle4"]
 [ext_resource type="Script" uid="uid://ccfmw32nj5qt" path="res://scenes/core/hover_enlarge.gd" id="5_gndyg"]
 [ext_resource type="Texture2D" uid="uid://b225xysgjm3ct" path="res://assets/sprites/ui/Settings/Back Button.png" id="6_58g32"]
+[ext_resource type="Texture2D" uid="uid://vcb7rsw1wbgb" path="res://assets/sprites/ui/Settings/Settings Slider.png" id="7_srle4"]
 
 [sub_resource type="Animation" id="Animation_n4f1f"]
 length = 0.001
@@ -79,6 +80,10 @@ _data = {
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gngh"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_47k15"]
+content_margin_top = 20.0
+texture = ExtResource("7_srle4")
+
 [node name="settings" type="CanvasLayer" unique_id=157577427]
 script = ExtResource("1_n4f1f")
 
@@ -97,8 +102,8 @@ texture = ExtResource("2_1fu6o")
 libraries/ = SubResource("AnimationLibrary_4phbw")
 
 [node name="backtomenu" type="Button" parent="Control/Sprite2D" unique_id=871434884]
-offset_left = -242.56683
-offset_top = 198.28879
+offset_left = -284.9198
+offset_top = 171.33688
 offset_right = 246.41718
 offset_bottom = 304.1711
 theme_override_fonts/font = ExtResource("2_3iepn")
@@ -110,7 +115,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_jcqb6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_37w2j")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control/Sprite2D/backtomenu" unique_id=915463019]
-position = Vector2(289.4062, 70.98881)
+position = Vector2(346.52405, 103.95719)
 scale = Vector2(1.0002244, 1.0002242)
 texture = ExtResource("4_srle4")
 script = ExtResource("5_gndyg")
@@ -139,6 +144,7 @@ offset_left = -284.91983
 offset_top = -88.55615
 offset_right = 282.99466
 offset_bottom = -63.556152
+theme_override_styles/slider = SubResource("StyleBoxTexture_47k15")
 max_value = 1.0
 step = 0.01
 
@@ -147,6 +153,7 @@ offset_left = -284.91983
 offset_top = 82.78075
 offset_right = 282.99472
 offset_bottom = 98.78075
+theme_override_styles/slider = SubResource("StyleBoxTexture_47k15")
 max_value = 1.0
 step = 0.01
 
