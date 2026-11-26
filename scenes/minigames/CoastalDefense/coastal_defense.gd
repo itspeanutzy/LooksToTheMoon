@@ -88,13 +88,14 @@ func end_minigame(is_win: bool) -> void:
 	$SurviveTimer.stop()
 	
 	var prev_level = GameState.prosperity
+	var level_scale = GameState.prosperity - 1
 	
 	if is_win:
 		show_message("The Coast is Clear")
-		GameState.add_rewards(100, 50)
+		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
 		show_message("Krishark Coast has Fallen!!")
-		GameState.add_rewards(50, 10)
+		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 15)
 		
 	for enemy in get_tree().get_nodes_in_group("Enemy"):
 		enemy.queue_free()
