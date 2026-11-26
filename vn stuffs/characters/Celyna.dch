@@ -5,8 +5,19 @@
 &"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "",
-"sound_moods": {},
+"sound_mood_default": "celyna",
+"sound_moods": {
+"celyna": {
+"mode": 0,
+"name": "celyna",
+"pitch_base": 1.15,
+"pitch_variance": 0.0,
+"skip_characters": 3.0,
+"sound_path": "res://assets/audio/typing sonds/celyna_type.ogg",
+"volume_base": -5.0,
+"volume_variance": -0.2
+}
+},
 "style": "",
 "suffix": ""
 },
