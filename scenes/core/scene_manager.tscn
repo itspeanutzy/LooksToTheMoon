@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dyla8qibveq41"]
 
-[ext_resource type="Script" uid="uid://b2cqye48nj7gy" path="res://scenes/core/SceneManager.gd" id="1_ej7xc"]
+[ext_resource type="Script" uid="uid://qjjtak7ik5df" path="res://scenes/core/SceneManager.gd" id="1_ej7xc"]
 [ext_resource type="PackedScene" uid="uid://dwid3ksjwi42r" path="res://scenes/core/map.tscn" id="2_a16sl"]
 
 [node name="Node" type="Node" unique_id=940530841]

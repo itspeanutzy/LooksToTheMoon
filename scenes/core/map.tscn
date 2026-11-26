@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cbi687vw5tm7e" path="res://assets/sprites/map (temporary)/map_border.png" id="4_qditw"]
 [ext_resource type="Texture2D" uid="uid://cgewwt12jlfjo" path="res://assets/sprites/map (temporary)/quest.png" id="5_7k4hv"]
 [ext_resource type="Script" uid="uid://xy8lajnsnrp" path="res://scenes/core/hide_quests.gd" id="6_6bffb"]
+[ext_resource type="Script" uid="uid://bj1224u4g45ne" path="res://scenes/core/hover_settings.gd" id="6_d74x6"]
 [ext_resource type="Script" uid="uid://ccfmw32nj5qt" path="res://scenes/core/hover_enlarge.gd" id="7_6bffb"]
 [ext_resource type="Texture2D" uid="uid://dlhmvpnrqdwst" path="res://assets/sprites/map (temporary)/questt_arrow.png" id="7_mh1bn"]
 [ext_resource type="Texture2D" uid="uid://bqnpfu14fxpyg" path="res://assets/sprites/ui/quest.png" id="9_4hq1i"]
@@ -37,6 +38,7 @@ position = Vector2(0, -6.1035156e-05)
 scale = Vector2(1.0000001, 1.0000001)
 stream = ExtResource("2_13g52")
 autoplay = true
+parameters/looping = true
 
 [node name="BluePinkYellowPastelLineEnglishGraphicNovelConventionsPresentation_pdf" type="Sprite2D" parent="." unique_id=1027498257]
 position = Vector2(575.99994, 324)
@@ -63,6 +65,7 @@ offset_top = 38.0
 offset_right = 1119.0
 offset_bottom = 88.0
 texture_normal = ExtResource("11_13g52")
+script = ExtResource("6_d74x6")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=935609030]
 position = Vector2(575.7778, 324.00003)
