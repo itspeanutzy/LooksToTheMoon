@@ -1,3 +1,4 @@
+[background arg="res://assets/backgrounds/Krishark Coastal Town.png" fade="0.0"]
 join Ermir right [animation="Bounce In" length="0.0"]
 join Seyche left [animation="Bounce In" length="0.0"]
 [wait time="2.0"]

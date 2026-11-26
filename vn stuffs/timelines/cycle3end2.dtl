@@ -1,3 +1,4 @@
+[background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
 join Celyna center
 join Seyche left [animation="Fade In" length="0.0"]
 Celyna: Dear? What’s wrong..
