@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5xb46obsnann"
+path="res://.godot/imported/ermir_type.ogg-abcd4c6ce7e05e44dd2cb88f31f7fe2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/typing sonds/ermir_type.ogg"
+dest_files=["res://.godot/imported/ermir_type.ogg-abcd4c6ce7e05e44dd2cb88f31f7fe2e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
