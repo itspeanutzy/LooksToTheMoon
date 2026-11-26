@@ -2,7 +2,8 @@ extends Node
 
 const MAP_SCENE := "res://scenes/core/map.tscn"
 
-# Stack: tiap level punya array timeline, dimainin berurutan
+@onready var overlay = $CanvasLayer/TransitionOverlay
+
 var timeline_sequence = {
 	1: ["prologue"],
 	2: ["cycle1", "cycle2intro"],
@@ -14,27 +15,34 @@ var timeline_sequence = {
 var _timeline_queue: Array = []
 
 func _ready() -> void:
-	
+	overlay.visible = true
+
 	var current_level = GameState.prosperity
 	_timeline_queue = timeline_sequence.get(current_level, []).duplicate()
-	
+
 	if _timeline_queue.is_empty():
 		open_map()
 		return
-	
+
 	_play_next()
 
 func _play_next() -> void:
 	if _timeline_queue.is_empty():
 		open_map()
 		return
-	
+
 	var next_timeline = _timeline_queue.pop_front()
+
 	Dialogic.timeline_ended.connect(_on_timeline_ended, CONNECT_ONE_SHOT)
 	Dialogic.start(next_timeline)
+
+	await get_tree().process_frame
+	overlay.visible = false
 
 func _on_timeline_ended() -> void:
 	_play_next()  # mainin timeline berikutnya di queue, atau balik ke map kalau habis
 
 func open_map() -> void:
 	get_tree().change_scene_to_file.call_deferred(MAP_SCENE)
+	overlay.visible = true
+	_play_next.call_deferred()

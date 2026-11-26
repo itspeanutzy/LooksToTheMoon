@@ -7,3 +7,12 @@
 script = ExtResource("1_ej7xc")
 
 [node name="map" parent="." unique_id=120332078 instance=ExtResource("2_a16sl")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1972934023]
+layer = 2
+
+[node name="TransitionOverlay" type="ColorRect" parent="CanvasLayer" unique_id=1750324746]
+z_index = 1
+offset_right = 1162.0
+offset_bottom = 650.0
+color = Color(0, 0, 0, 1)

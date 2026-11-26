@@ -5,9 +5,11 @@ var loop: AudioStreamPlayer
 
 func _ready():
 	intro = AudioStreamPlayer.new()
-	loop = AudioStreamPlayer.new()
-
+	intro.bus = "BGM"
 	add_child(intro)
+	
+	loop = AudioStreamPlayer.new()
+	loop.bus = "BGM"
 	add_child(loop)
 
 	intro.stream = preload("res://assets/audio/music/celyne.ogg")
