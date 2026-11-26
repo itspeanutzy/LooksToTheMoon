@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:assets/sprites/visualnovel/Seyche/seyche_happy.png.import
-uid="uid://br6obwuivfxye"
-path="res://.godot/imported/seyche_happy.png-a6784fabd6e286beef6d41ddb8628f23.ctex"
-========
-uid="uid://sb7obn08jco5"
+uid="uid://dkqbqluw64duh"
 path="res://.godot/imported/ErmirShy.png-9173965e8d9b012b9856300abd6c7216.ctex"
->>>>>>>> vn:assets/sprites/visualnovel/Femboy (Ermir)/ErmirShy.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assets/sprites/visualnovel/Seyche/seyche_happy.png.import
-source_file="res://assets/sprites/visualnovel/Seyche/seyche_happy.png"
-dest_files=["res://.godot/imported/seyche_happy.png-a6784fabd6e286beef6d41ddb8628f23.ctex"]
-========
 source_file="res://assets/sprites/visualnovel/Femboy (Ermir)/ErmirShy.png"
 dest_files=["res://.godot/imported/ErmirShy.png-9173965e8d9b012b9856300abd6c7216.ctex"]
->>>>>>>> vn:assets/sprites/visualnovel/Femboy (Ermir)/ErmirShy.png.import
 
 [params]
 
