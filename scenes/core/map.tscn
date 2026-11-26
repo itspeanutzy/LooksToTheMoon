@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dwid3ksjwi42r"]
 
 [ext_resource type="Script" uid="uid://b5pm47y5i22g" path="res://scenes/core/map.gd" id="1_2klcf"]
+[ext_resource type="AudioStream" uid="uid://gjbsif844uj6" path="res://assets/audio/music/map.ogg" id="2_13g52"]
 [ext_resource type="Texture2D" uid="uid://bweifn0w3uqp6" path="res://assets/sprites/Map Final.png" id="2_dyjxj"]
 [ext_resource type="PackedScene" uid="uid://chhfe0q4es5ks" path="res://scenes/core/settings.tscn" id="3_2lpho"]
 [ext_resource type="Script" uid="uid://y3kkga4xitlt" path="res://scenes/core/map_camera.gd" id="4_6psm2"]
@@ -30,6 +31,12 @@ func _on_pressed() -> void:
 
 [node name="map" type="Node2D" unique_id=120332078]
 script = ExtResource("1_2klcf")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1573158248]
+position = Vector2(0, -6.1035156e-05)
+scale = Vector2(1.0000001, 1.0000001)
+stream = ExtResource("2_13g52")
+autoplay = true
 
 [node name="BluePinkYellowPastelLineEnglishGraphicNovelConventionsPresentation_pdf" type="Sprite2D" parent="." unique_id=1027498257]
 position = Vector2(575.99994, 324)
