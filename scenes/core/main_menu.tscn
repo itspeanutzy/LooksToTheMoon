@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cyo2g4rbh41t2" path="res://scenes/core/main_menu.gd" id="1_c7ldt"]
 [ext_resource type="Texture2D" uid="uid://biheivjhpax72" path="res://assets/sprites/Untitled design.png" id="1_l6cm7"]
 [ext_resource type="FontFile" uid="uid://c5snfvev1ffim" path="res://assets/fonts/Oregano-Regular.ttf" id="2_r6wqj"]
+[ext_resource type="Texture2D" uid="uid://b0nevj7aioqp7" path="res://assets/sprites/ui/menu/Logo badag.png" id="3_pa3yt"]
 [ext_resource type="PackedScene" uid="uid://cbn5qaygfh8mv" path="res://scenes/menu_art.tscn" id="4_wdlpg"]
 [ext_resource type="AudioStream" uid="uid://ddkem3espepsm" path="res://assets/audio/music/main_menu.ogg" id="5_p31qs"]
 
@@ -57,7 +58,19 @@ tracks/1/path = NodePath("buttons:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(8.033334, 8.466667),
+"times": PackedFloat32Array(8.933333, 9.366667),
+"transitions": PackedFloat32Array(0.4061262, 0.4061262),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/menu/Parallaxes/Parallax2D2/Logo:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(7.4, 9.1),
 "transitions": PackedFloat32Array(0.4061262, 0.4061262),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -175,6 +188,18 @@ mouse_filter = 2
 
 [node name="menu" parent="Control" unique_id=150214627 instance=ExtResource("4_wdlpg")]
 position = Vector2(576, 0)
+
+[node name="Logo" type="TextureRect" parent="Control/menu/Parallaxes/Parallax2D2" parent_id_path=PackedInt32Array(150214627, 983129951) index="0" unique_id=402483075]
+modulate = Color(1, 1, 1, 0)
+offset_left = -517.1429
+offset_top = 52.38096
+offset_right = 1402.8572
+offset_bottom = 1132.381
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_pa3yt")
+
+[node name="Parallax2D8" parent="Control/menu/Parallaxes" parent_id_path=PackedInt32Array(150214627, 846014486) index="7" unique_id=557225240]
+scroll_scale = Vector2(0, 0.5)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1301055080]
 libraries/ = SubResource("AnimationLibrary_pa3yt")
