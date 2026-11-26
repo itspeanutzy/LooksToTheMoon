@@ -181,6 +181,7 @@ libraries/ = SubResource("AnimationLibrary_pa3yt")
 autoplay = &"menu_fade"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1737128171]
+process_mode = 3
 stream = ExtResource("5_p31qs")
 autoplay = true
 

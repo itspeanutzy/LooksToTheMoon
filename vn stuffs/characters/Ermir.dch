@@ -5,8 +5,19 @@
 &"color": Color(1, 1, 1, 1),
 &"custom_info": {
 "prefix": "",
-"sound_mood_default": "",
-"sound_moods": {},
+"sound_mood_default": "Ermir",
+"sound_moods": {
+"Ermir": {
+"mode": 0,
+"name": "Ermir",
+"pitch_base": 1.1,
+"pitch_variance": 0.0,
+"skip_characters": 1.0,
+"sound_path": "res://assets/audio/typing sonds/ermir_type.ogg",
+"volume_base": -5.0,
+"volume_variance": -0.1
+}
+},
 "style": "",
 "suffix": ""
 },
