@@ -4,6 +4,7 @@ extends Node2D
 @onready var button_slots = [$Slot1, $Slot2, $Slot3, $Slot4]
 @onready var map: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
+
 var minigame_pool = [
 	{
 		"name": "Blessing Harvest", 
@@ -25,14 +26,13 @@ var minigame_pool = [
 func _ready() -> void:
 	Dialogic.timeline_started.connect(_on_timeline_started)
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
-	
-	await get_tree().process_frame #tunggu sebelum ngecek current timeline
-	
-	if Dialogic.current_timeline == null:
-		map.play()
 	fade.color.a = 0
 	HUD.show()
 	_setup_minigames()
+	
+	await get_tree().process_frame
+	if Dialogic.current_timeline == null:
+		map.play()
 
 func _setup_minigames():
 	var available_minigames = []
@@ -73,6 +73,8 @@ func _on_timeline_started() -> void:
 	map.stream_paused = true
 
 func _on_timeline_ended() -> void:
+	if GameState.is_playing:
+		return
 	map.stream_paused = false
 	if not map.playing:
 		map.play()

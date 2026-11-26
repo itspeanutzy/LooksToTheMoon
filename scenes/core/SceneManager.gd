@@ -21,13 +21,15 @@ func _ready() -> void:
 	_timeline_queue = timeline_sequence.get(current_level, []).duplicate()
 
 	if _timeline_queue.is_empty():
+		GameState.sequence_playing = false
 		open_map()
 		return
-
+	GameState.sequence_playing = true
 	_play_next()
 
 func _play_next() -> void:
 	if _timeline_queue.is_empty():
+		GameState.sequence_playing = false
 		open_map()
 		return
 

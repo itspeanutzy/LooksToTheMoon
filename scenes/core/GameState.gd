@@ -7,6 +7,7 @@ signal level_up_triggered
 var faith: int = 0 # Currency
 var prosperity: int = 1 # Level (Milestone)
 var current_xp: int = 0
+var sequence_playing: bool = false
 
 func get_xp_needed() -> int:
 	return prosperity * 100 
