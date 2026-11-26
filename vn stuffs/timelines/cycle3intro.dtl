@@ -1,8 +1,8 @@
 [background arg="res://assets/backgrounds/Seyche Temple + Beach.png" fade="0.0"]
 audio music "res://assets/audio/music/seyche_theme.ogg"
 set {ermir_name} = "???"
-join "Civillian 2" left
-join "Civillian 1" right
+join "Civillian 2" left [animation="Bounce In" length="0.0"]
+join "Civillian 1" right [animation="Bounce In" length="0.0"]
 Within a small seaside temple dedicated to Seyche, merchants gather to pray.
 Seyche listens to their prayers from a distance until they finish and leave the temple.
 "Civillian 1": Oh Great Seyche, please bless our travels. The winds of commerce are approaching, and we pray for your protection in your waters.
