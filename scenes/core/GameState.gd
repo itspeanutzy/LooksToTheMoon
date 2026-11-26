@@ -1,19 +1,25 @@
 extends Node
 
 signal stats_changed
-signal cycle_advanced
+signal prosperity_leveled_up(new_level)
+signal level_up_triggered
 
-var faith: int = 0
-var prosperity: int = 1
-var faith_needed: int = 100
+var faith: int = 0 # Currency
+var prosperity: int = 1 # Level (Milestone)
+var current_xp: int = 0
 
-func add_faith(amount: int):
-	faith += amount
-	stats_changed.emit()
+func get_xp_needed() -> int:
+	return prosperity * 100 
+
+func add_rewards(currency_amount: int, xp_amount: int):
+	faith += currency_amount
+	current_xp += xp_amount
 	
-	if faith >= faith_needed:
-		faith -= faith_needed
+	var needed = get_xp_needed()
+	while current_xp >= needed:
+		current_xp -= needed
 		prosperity += 1
-		faith_needed += 50
-		stats_changed.emit()
-		cycle_advanced.emit()
+		needed = get_xp_needed()
+		level_up_triggered.emit() 
+		
+	stats_changed.emit()
