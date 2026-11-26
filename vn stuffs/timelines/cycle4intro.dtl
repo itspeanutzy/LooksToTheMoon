@@ -1,8 +1,8 @@
 set {strymir_name} = "???"
 audio music "res://assets/audio/music/styrmir.ogg"
 [background arg="res://assets/backgrounds/Krishark Sea Stormy.png" fade="0.0"]
-join Seyche left
-join Strymir right
+join Seyche left [animation="Bounce In" length="0.0"]
+join Strymir right [animation="Bounce In" length="0.0"]
 Strymir: So you do dare to return?
 Seyche (Surprised): You! [pause=0.4]You’re...
 Seyche (Determined): [lspeed=0.1]You’re.. [pause=0.4]Styrmir..

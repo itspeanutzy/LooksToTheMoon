@@ -1,7 +1,7 @@
 audio music "res://assets/audio/music/seyche_theme.ogg"
 [background arg="res://assets/backgrounds/Seyche Temple + Beach.png" fade="0.0"]
-join Seyche left
-join Fisherman right
+join Seyche left [animation="Bounce In" length="0.0"]
+join Fisherman right [animation="Bounce In" length="0.0"]
 The young Goddess walks on the surface of her sparkling waters, [pause=0.1]pondering her past yet finding nothing in the depths of her memories.[pause=0.8] She walks towards the small fishing town from which she was born, watching an old fisherman preparing his vessel.[pause=0.] The man’s eyes seem to be full of history and experience.
 Seyche: Good morning, dear fisherman.
 Fisherman: Ah, [pause=0.5]my Goddess... [pause=0.5]I did not expect you to suddenly appear in front of a fisherman like me.

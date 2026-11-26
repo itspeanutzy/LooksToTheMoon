@@ -1,7 +1,7 @@
 do CelyneLoop.play_bgm()
 [background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
-join Seyche left
-join Celyna right
+join Seyche left [animation="Bounce In" length="0.0"]
+join Celyna right [animation="Bounce In" length="0.0"]
 As days blurred into hours for the goddesses, an unexpected warmth enveloped them.[pause=0.6] Unforced and achingly familiar.[pause=0.8] It was as if it had always lingered there,[pause=0.3] waiting.[pause=0.5] Waiting patiently for a thousand years.
 The sea lit up with a brilliant blue glow, like stars dancing along with the waves like reflections of the night sky. [pause=0.8]They sat by the shore, side by side, admiring the view above and before them.
 Seyche’s eyes never left Celyna, marveling at details of the moon goddess’s features. [pause=0.6]The twinkle in her hair,[pause=0.4] the way her graceful form complimented the night.[pause=0.6] How the light of her presence balanced the shadows, as if the galaxies itself leaned in to admire her.

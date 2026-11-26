@@ -26,7 +26,6 @@ Ermir (Neutral): Trust me, she knows way more than she lets on.
 Ermir (Laugh): Welp! Gotta go, my worshippers just built a cool flying machine, HAH! They’re becoming more and more like birds!
 leave Ermir
 do ErmirLoop.stop_bgm()
-update Seyche center [move_time="1.0"]
 Seyche (Surprised): Huh-! [pause=0.4]Hold on-... [pause=0.4]well there he goes..
 Seyche: Wait, how did he know my name?...
 jump cycle3end2/
