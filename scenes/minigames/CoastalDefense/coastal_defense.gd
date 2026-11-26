@@ -10,7 +10,7 @@ var time_left: float
 var climax_triggered = false
 
 enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
-var current_state = GameState.INTRO
+var current_state = MinigameState.INTRO
 
 func _ready() -> void:
 	HUD.hide()

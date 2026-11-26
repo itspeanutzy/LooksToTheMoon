@@ -13,7 +13,7 @@ var time_left: float = 0
 @onready var message_label = $OverlayLayer/ColorRect/Message
 
 enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
-var current_state = GameState.INTRO
+var current_state = MinigameState.INTRO
 
 func _ready() -> void:
 	HUD.hide()
