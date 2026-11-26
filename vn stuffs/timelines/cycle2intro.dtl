@@ -1,7 +1,7 @@
 [background arg="res://assets/backgrounds/Seyche Temple + Beach.png" fade="0.0"]
 join Seyche center
 The young Goddess walks on the surface of her sparkling waters, pondering her past yet finding nothing in the depths of her memories. She walks towards the small fishing town from which she was born, watching an old fisherman preparing his vessel. The man’s eyes seem to be full of history and experience.
-Seyche: Good morning,dear fisherman.
+Seyche: Good morning, dear fisherman.
 Fisherman: Ah, [pause=0.5]my Goddess... [pause=0.5]I did not expect you to suddenly appear in front of a fisherman like me.
 The fisherman stops for a moment upon noticing Seyche’s presence and places his crates on the dock.
 Seyche: Well, there is a reason as to why, and it’s because I need to ask you something.

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nv10eoeo7ynr"
-path="res://.godot/imported/seyche_happy.png-aa894d2c8215acfdde771d8f01324bc9.ctex"
+uid="uid://cvjg2n04idqiu"
+path="res://.godot/imported/seyche_determined.png-65e825d43ef8e2d94356fc9afdc59361.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts/seyche_happy.png"
-dest_files=["res://.godot/imported/seyche_happy.png-aa894d2c8215acfdde771d8f01324bc9.ctex"]
+source_file="res://assets/sprites/visualnovel/Seyche/seyche_determined.png"
+dest_files=["res://.godot/imported/seyche_determined.png-65e825d43ef8e2d94356fc9afdc59361.ctex"]
 
 [params]
 
