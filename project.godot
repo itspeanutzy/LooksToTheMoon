@@ -22,9 +22,9 @@ config/icon="res://icon.svg"
 Dialogic="*uid://ds2q0uclmolvu"
 Settings="*uid://chhfe0q4es5ks"
 GameState="*uid://dst00c5k6xuha"
+HUD="*uid://bx8eio8x2guwo"
 AudioManager="*uid://dsa6nado6xd5r"
 Utils="*uid://b8er3g5m4dx8f"
-HUD="*uid://bx8eio8x2guwo"
 CelyneLoop="*uid://6jj7alkv5k0t"
 ErmirLoop="*uid://dayw7qsscv5sl"
 
@@ -60,10 +60,7 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://vn stuffs/style.tres"]
 layout/default_style="res://vn stuffs/style.tres"
 variables={
-"celyna_name": "Celyna",
-"ermir_name": "Ermir",
-"seyche_name": "Seyche",
-"strymir_name": "Strymir"
+"seyche_name_hidden": "'Goddess'"
 }
 text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
@@ -101,6 +98,7 @@ history/simple_history_enabled=false
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="uid://bv2qijiqb4qgq"

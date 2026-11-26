@@ -7,7 +7,8 @@
 [ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scenes/minigames/BoatGuiding/guide_a_ship_cam.gd" id="3_dlwrd"]
 [ext_resource type="Texture2D" uid="uid://beq1xdoat6e2o" path="res://assets/sprites/minigames/GuidingBoat/seascroll.png" id="4_cb5u0"]
 [ext_resource type="Script" uid="uid://vr2vjkn4ynm3" path="res://scenes/minigames/BoatGuiding/UI.gd" id="5_m4dej"]
-[ext_resource type="Texture2D" uid="uid://bkynij2oor6it" path="res://assets/sprites/minigames/Vector 1 1.png" id="6_aoics"]
+[ext_resource type="Texture2D" uid="uid://dxuq7wciqr2tg" path="res://assets/sprites/minigames/GuidingBoat/Health.png" id="8_x6alv"]
+[ext_resource type="Theme" uid="uid://bq05iaqk744eu" path="res://resources/UI.tres" id="9_doaq0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x6alv"]
 shader = ExtResource("2_dlwrd")
@@ -40,25 +41,25 @@ script = ExtResource("3_dlwrd")
 script = ExtResource("5_m4dej")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=985224205]
-offset_left = 25.0
-offset_top = 21.0
-offset_right = 65.0
-offset_bottom = 61.0
+offset_left = 35.0
+offset_top = 31.0
+offset_right = 287.0
+offset_bottom = 103.0
 theme_override_constants/separation = 0
 
 [node name="Life1" type="TextureRect" parent="UI/HBoxContainer" unique_id=1993363827]
 layout_mode = 2
-texture = ExtResource("6_aoics")
+texture = ExtResource("8_x6alv")
 stretch_mode = 5
 
 [node name="Life2" type="TextureRect" parent="UI/HBoxContainer" unique_id=1238662403]
 layout_mode = 2
-texture = ExtResource("6_aoics")
+texture = ExtResource("8_x6alv")
 stretch_mode = 5
 
 [node name="Life3" type="TextureRect" parent="UI/HBoxContainer" unique_id=802939994]
 layout_mode = 2
-texture = ExtResource("6_aoics")
+texture = ExtResource("8_x6alv")
 stretch_mode = 5
 
 [node name="Overlay" type="CanvasLayer" parent="." unique_id=1194142961]
@@ -76,6 +77,7 @@ offset_left = 227.0
 offset_top = 268.0
 offset_right = 956.0
 offset_bottom = 335.0
+theme = ExtResource("9_doaq0")
 theme_override_font_sizes/font_size = 54
 horizontal_alignment = 1
 vertical_alignment = 1
