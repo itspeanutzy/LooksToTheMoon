@@ -1,9 +1,12 @@
 extends Node2D
-
+@onready var music_intro = $intro
+@onready var music_loop = $loop
 @onready var overlay = $OverlayLayer
 @onready var message_label = $OverlayLayer/ColorRect2/Message
 @onready var time_label = $HUD/TimeLabel
 @onready var health_bar = $HUD/BaseHealthBar
+@onready var win_sound = $win
+@onready var lose_sound = $lose
 @export var enemy_scene: PackedScene
 @export var survive_timer: float = 30
 var time_left: float
@@ -13,6 +16,8 @@ enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
 var current_state = MinigameState.INTRO
 
 func _ready() -> void:
+	music_intro.finished.connect(_on_intro_finished)
+	music_intro.play()
 	HUD.hide()
 	$HUD.hide()
 	
@@ -27,6 +32,9 @@ func _ready() -> void:
 	$Coast.base_destroyed.connect(_on_base_destroyed)
 	
 	show_message("Click anywhere to continue")
+
+func _on_intro_finished():
+	music_loop.play()
 
 func _input(event: InputEvent) -> void:
 	if current_state == MinigameState.INTRO and event.is_pressed() and event is InputEventMouseButton:
@@ -92,9 +100,11 @@ func end_minigame(is_win: bool) -> void:
 	
 	if is_win:
 		show_message("The Coast is Clear")
+		win_sound.play()
 		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
 		show_message("Krishark Coast has Fallen!!")
+		lose_sound.play()
 		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 15)
 		
 	for enemy in get_tree().get_nodes_in_group("Enemy"):

@@ -1,10 +1,14 @@
 extends Node2D
 
+@onready var music_intro = $intro
+@onready var music_loop = $loop
 @onready var spawner = $Spawner
 @onready var boat = $boat
 @onready var overlay = $Overlay
 @onready var overlay_label = $Overlay/ColorRect2/Message
 @onready var ui = $UI
+@onready var win_sound = $win
+@onready var lose_sound = $lose
 
 @export var game_duration: float = 30.0
 var level_timer: Timer
@@ -14,6 +18,8 @@ enum MinigameState {INTRO, PLAYING, GAMEOVER, WIN}
 var current_state = MinigameState.INTRO
 
 func _ready():
+	music_intro.finished.connect(_on_intro_finished)
+	music_intro.play()
 	add_to_group("game_manager")
 	HUD.hide()
 	ui.hide()
@@ -35,6 +41,9 @@ func _ready():
 	add_child(level_timer)
 	
 	show_message("Guide the Ship!\nClick anywhere to start")
+
+func _on_intro_finished():
+	music_loop.play()
 
 func _input(event):
 	if current_state == MinigameState.INTRO and event is InputEventMouseButton and event.pressed:
@@ -94,9 +103,12 @@ func end_minigame(is_win: bool):
 
 	if is_win:
 		show_message("The Ship Sailed Safely!!!")
+		win_sound.play()
 		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
+		
 	else:
 		show_message("Your Ship Sank!\nGame Over")
+		lose_sound.play()
 		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 5)
 
 	await get_tree().create_timer(2.0).timeout

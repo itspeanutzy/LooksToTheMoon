@@ -9,6 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://tc1rsifo4875" path="res://assets/sprites/ui/Defense Bar Border.png" id="7_kf8pu"]
 [ext_resource type="Texture2D" uid="uid://djug08lbor5ha" path="res://assets/sprites/ui/Defense Bar box.png" id="8_mh1kp"]
 [ext_resource type="Texture2D" uid="uid://daksiom0i1csb" path="res://assets/sprites/ui/Defense Bar Isian.png" id="9_617rf"]
+[ext_resource type="AudioStream" uid="uid://bh8v83kxm3ra4" path="res://assets/audio/sfx/fail.ogg" id="10_boe0f"]
+[ext_resource type="AudioStream" uid="uid://5xk208r7by15" path="res://assets/audio/sfx/win.ogg" id="11_ei2xr"]
+[ext_resource type="AudioStream" uid="uid://dbnnivfljao8b" path="res://assets/audio/music/attack_intro.ogg" id="12_boe0f"]
+[ext_resource type="AudioStream" uid="uid://dh2av1gqmfb67" path="res://assets/audio/music/attack_loop.ogg" id="13_ei2xr"]
 
 [node name="Node2D" type="Node2D" unique_id=1602725757]
 script = ExtResource("1_xcvmj")
@@ -80,3 +84,16 @@ autostart = true
 [node name="SurviveTimer" type="Timer" parent="." unique_id=1513491329]
 wait_time = 30.0
 autostart = true
+
+[node name="lose" type="AudioStreamPlayer2D" parent="." unique_id=319955065]
+stream = ExtResource("10_boe0f")
+
+[node name="win" type="AudioStreamPlayer2D" parent="." unique_id=1799298746]
+stream = ExtResource("11_ei2xr")
+
+[node name="intro" type="AudioStreamPlayer2D" parent="." unique_id=2057964317]
+stream = ExtResource("12_boe0f")
+
+[node name="loop" type="AudioStreamPlayer2D" parent="." unique_id=181843521]
+stream = ExtResource("13_ei2xr")
+parameters/looping = true

@@ -11,6 +11,8 @@ var time_left: float = 0
 @onready var score_label = $HUD/FishCounter
 @onready var overlay = $OverlayLayer
 @onready var message_label = $OverlayLayer/ColorRect/Message
+@onready var win_sound = $win
+@onready var lose_sound = $lose
 
 enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
 var current_state = MinigameState.INTRO
@@ -88,9 +90,11 @@ func end_minigame(is_win: bool) -> void:
 	
 	if is_win:
 		show_message("The Harvest was Bountiful!")
+		win_sound.play()
 		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
 		show_message("And the Sea stay still")
+		lose_sound.play()
 		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 15)
 	
 	for fish in get_tree().get_nodes_in_group("Fish"):
