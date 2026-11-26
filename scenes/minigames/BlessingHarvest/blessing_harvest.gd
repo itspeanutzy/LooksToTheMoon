@@ -4,7 +4,7 @@ var fish_caught = 0
 var time_left: float = 0
 
 @export var total_fish_needed = 10
-@export var total_fish_to_spawn = 15
+@export var total_fish_to_spawn = 25
 @export var fish_scene : PackedScene
 @export var time_limit: float = 30
 
@@ -13,7 +13,7 @@ var time_left: float = 0
 @onready var message_label = $OverlayLayer/ColorRect/Message
 
 enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
-var current_state = GameState.INTRO
+var current_state = MinigameState.INTRO
 
 func _ready() -> void:
 	HUD.hide()
@@ -39,7 +39,7 @@ func _do_countdown():
 	overlay.hide()
 	$HUD.show()
 	time_left = time_limit
-	current_state = GameState.PLAYING
+	current_state = MinigameState.PLAYING
 	spawn_fish()
 
 func show_message(text: String) -> void:
