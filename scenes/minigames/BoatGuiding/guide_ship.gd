@@ -17,6 +17,10 @@ func _ready():
 	add_to_group("game_manager")
 	HUD.hide()
 	ui.hide()
+	
+	var level_scale = GameState.prosperity - 1
+	game_duration += level_scale * 5.0
+	
 	spawner.timer.stop()
 	spawner.wave_timer.stop()
 	spawner.set_process(false)
@@ -35,6 +39,10 @@ func _ready():
 func _input(event):
 	if current_state == MinigameState.INTRO and event is InputEventMouseButton and event.pressed:
 		start_game()
+
+func show_message(text: String) -> void:
+	overlay.show()
+	overlay_label.text = text
 
 func start_game():
 	current_state = MinigameState.PLAYING
@@ -62,33 +70,37 @@ func _on_level_timer_timeout():
 
 func win_game():
 	if current_state != MinigameState.PLAYING: return
-	
 	current_state = MinigameState.WIN
-	ui.hide()
-	boat.set_physics_process(false)
-	
-	HUD.show()
-	
-	show_message("The Ship Sailed Safely!!!")
-	GameState.add_faith(100)
+	end_minigame(true) # Panggil fungsi baru
 
 func _on_boat_destroyed():
 	if current_state != MinigameState.PLAYING: return
-	
 	current_state = MinigameState.GAMEOVER
+	end_minigame(false) # Panggil fungsi baru
+
+# --- FUNGSI BARU KITA ---
+func end_minigame(is_win: bool):
 	ui.hide()
 	boat.set_physics_process(false)
 	spawner.timer.stop()
 	spawner.wave_timer.stop()
 	spawner.set_process(false)
 	
-	HUD.show()
-	
 	for rock in get_tree().get_nodes_in_group("rocks"): rock.queue_free()
 	for wave in get_tree().get_nodes_in_group("waves"): wave.queue_free()
+	
+	var prev_level = GameState.prosperity
+	
+	if is_win:
+		show_message("The Ship Sailed Safely!!!")
+		GameState.add_rewards(100, 50)
+	else:
+		show_message("Your Ship Sank!\nGame Over")
+		GameState.add_rewards(50, 10)
 		
-	show_message("Your Ship Sank!\nGame Over")
-
-func show_message(text: String):
-	overlay.show()
-	overlay_label.text = text
+	await get_tree().create_timer(2.0).timeout
+	
+	if GameState.prosperity > prev_level:
+		get_tree().change_scene_to_file("res://scenes/core/scene_manager.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/core/map.tscn")

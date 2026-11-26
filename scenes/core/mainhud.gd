@@ -8,5 +8,5 @@ func _ready():
 	update_ui()
 
 func update_ui():
-	faith_label.text = "Faith: " + str(GameState.faith) + "/" + str(GameState.faith_needed)
-	prosperity_label.text = "Prosperity: " + str(GameState.prosperity)
+	faith_label.text = "Faith: " + str(GameState.faith)
+	prosperity_label.text = "Prosperity: Lv." + str(GameState.prosperity) + " (" + str(GameState.current_xp) + "/" + str(GameState.get_xp_needed()) + ")"

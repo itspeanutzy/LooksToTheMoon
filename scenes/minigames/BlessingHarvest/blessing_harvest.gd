@@ -18,6 +18,10 @@ var current_state = GameState.INTRO
 func _ready() -> void:
 	HUD.hide()
 	$HUD.hide()
+	
+	var level_scale = GameState.prosperity - 1
+	total_fish_needed += level_scale * 5
+	
 	show_message("Click anywhere to continue")
 
 func _input(event: InputEvent) -> void:
@@ -75,17 +79,25 @@ func _on_boat_area_entered(area: Area2D) -> void:
 			end_minigame(true)
 
 func end_minigame(is_win: bool) -> void:
+	if current_state == MinigameState.END: return
 	current_state = MinigameState.END
 	$HUD.hide()
-	HUD.show()
+	
+	var prev_level = GameState.prosperity 
 	
 	if is_win:
 		show_message("The Harvest was Bountiful!")
-		GameState.add_faith(50)
+		GameState.add_rewards(100, 50)
 	else:
 		show_message("And the Sea stay still")
-		GameState.add_faith(10)
+		GameState.add_rewards(50, 10)
 	
 	for fish in get_tree().get_nodes_in_group("Fish"):
 		fish.queue_free()
+		
+	await get_tree().create_timer(2.0).timeout
 	
+	if GameState.prosperity > prev_level:
+		get_tree().change_scene_to_file("res://scenes/core/scene_manager.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/core/map.tscn")

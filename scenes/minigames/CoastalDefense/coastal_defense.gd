@@ -13,13 +13,18 @@ enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
 var current_state = GameState.INTRO
 
 func _ready() -> void:
+	HUD.hide()
 	$HUD.hide()
+	
+	var level_scale = GameState.prosperity - 1
+	survive_timer += level_scale * 5.0
+	$SpawnTimer.wait_time = max(0.4, $SpawnTimer.wait_time - (level_scale * 0.1))
+	
 	$SurviveTimer.wait_time = survive_timer
 	$SurviveTimer.timeout.connect(_on_survive_timer_timeout)
 	$SpawnTimer.timeout.connect(_on_spawn_timer_timeout)
 	$Coast.add_to_group("Base")
 	$Coast.base_destroyed.connect(_on_base_destroyed)
-	HUD.hide()
 	
 	show_message("Click anywhere to continue")
 
@@ -76,18 +81,27 @@ func _on_base_destroyed() -> void:
 	end_minigame(false)
 
 func end_minigame(is_win: bool) -> void:
+	if current_state == MinigameState.END: return
 	current_state = MinigameState.END
 	$HUD.hide()
 	$SpawnTimer.stop()
 	$SurviveTimer.stop()
-	HUD.show()
+	
+	var prev_level = GameState.prosperity
 	
 	if is_win:
 		show_message("The Coast is Clear")
-		GameState.add_faith(50)
+		GameState.add_rewards(100, 50)
 	else:
 		show_message("Krishark Coast has Fallen!!")
-		GameState.add_faith(10)
+		GameState.add_rewards(50, 10)
 		
 	for enemy in get_tree().get_nodes_in_group("Enemy"):
 		enemy.queue_free()
+		
+	await get_tree().create_timer(2.0).timeout
+	
+	if GameState.prosperity > prev_level:
+		get_tree().change_scene_to_file("res://scenes/core/scene_manager.tscn")
+	else:
+		get_tree().change_scene_to_file("res://scenes/core/map.tscn")
