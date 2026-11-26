@@ -38,6 +38,7 @@ position = Vector2(0, -6.1035156e-05)
 scale = Vector2(1.0000001, 1.0000001)
 stream = ExtResource("2_13g52")
 autoplay = true
+bus = &"BGM"
 parameters/looping = true
 
 [node name="BluePinkYellowPastelLineEnglishGraphicNovelConventionsPresentation_pdf" type="Sprite2D" parent="." unique_id=1027498257]

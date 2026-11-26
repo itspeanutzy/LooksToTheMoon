@@ -90,13 +90,17 @@ vertical_alignment = 1
 
 [node name="lose" type="AudioStreamPlayer2D" parent="." unique_id=120267178]
 stream = ExtResource("9_41bke")
+bus = &"SFX"
 
 [node name="win" type="AudioStreamPlayer2D" parent="." unique_id=880317190]
 stream = ExtResource("10_ppn7e")
+bus = &"SFX"
 
 [node name="intro" type="AudioStreamPlayer2D" parent="." unique_id=1266127320]
 stream = ExtResource("11_lb21s")
+bus = &"BGM"
 
 [node name="loop" type="AudioStreamPlayer2D" parent="." unique_id=697249500]
 stream = ExtResource("12_el0cs")
+bus = &"BGM"
 parameters/looping = true

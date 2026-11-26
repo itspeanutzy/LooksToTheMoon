@@ -87,13 +87,17 @@ autostart = true
 
 [node name="lose" type="AudioStreamPlayer2D" parent="." unique_id=319955065]
 stream = ExtResource("10_boe0f")
+bus = &"SFX"
 
 [node name="win" type="AudioStreamPlayer2D" parent="." unique_id=1799298746]
 stream = ExtResource("11_ei2xr")
+bus = &"SFX"
 
 [node name="intro" type="AudioStreamPlayer2D" parent="." unique_id=2057964317]
 stream = ExtResource("12_boe0f")
+bus = &"BGM"
 
 [node name="loop" type="AudioStreamPlayer2D" parent="." unique_id=181843521]
 stream = ExtResource("13_ei2xr")
+bus = &"BGM"
 parameters/looping = true

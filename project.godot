@@ -17,6 +17,10 @@ boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://rh31xc04f0q0"
+
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
@@ -85,19 +89,20 @@ save/encryption_on_exports_only=true
 text/autopauses={}
 audio/channel_defaults={
 "": {
-"audio_bus": "",
+"audio_bus": "SFX",
 "fade_length": 0.0,
 "loop": false,
 "volume": 0.0
 },
 "music": {
-"audio_bus": "",
+"audio_bus": "BGM",
 "fade_length": 0.0,
 "loop": true,
 "volume": 0.0
 }
 }
 history/simple_history_enabled=false
+audio/type_sound_bus="SFX"
 
 [display]
 
