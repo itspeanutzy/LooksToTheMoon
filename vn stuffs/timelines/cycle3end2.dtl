@@ -2,18 +2,18 @@ do CelyneLoop.play_bgm()
 [background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
 join Celyna center
 join Seyche left [animation="Fade In" length="0.0"]
-Celyna: Dear? What’s wrong..
-Seyche: Oh! Nothing, it’s just.. Something that I heard today.
+Celyna (Sad): Dear?[pause=0.4] What’s wrong..
+Seyche: Oh! [pause=0.4]Nothing, it’s just.. [pause=0.4]Something that I heard today.
 Celyna: You know you can tell me anything...
 Seyche (Uncomfortable): Well, something Ermir told me has been on my mind for a bit.
-Seyche: It’s about.. Styrmir, and well, me.
+Seyche: It’s about.. [pause=0.8]Styrmir,[pause=0.4] and well,[pause=0.4] me.
 Celyna: .....
-[wait time="1.0"]
+[wait time="3.0"]
 Celyna: Styrmir.. He did something in the past.. To you.
-Seyche: ..How? I wasn’t even here until a few months ago.. And I never met this Styrmir guy.
-Celyna: Seyche, This isn’t your first time here. You’ve been here before.
-Seyche (Surprised): I-I have? How have I not remembered anything?
+Seyche: ..How?[pause=0.8] I wasn’t even here until a few months ago.. [pause=0.4]And I never met this Styrmir guy.
+Celyna: Seyche, This isn’t your first time here.[pause=0.4] You’ve been here before.
+Seyche (Surprised): I-I have?[pause=0.4] How have I not remembered anything?
 Celyna: Back then, Styrmir disliked your worshippers and he had warned you about it.
 Celyna: You’ve told me about it.
-Celyna: Then you didn’t listen.. And the rest… Well, Styrmir never went back on his word.
-Seyche (Normal): ... Oh…
+Celyna: Then you didn’t listen... [pause=0.4]And the rest... [pause=0.4]Well, Styrmir never went back on his word.
+Seyche (Normal): ... Oh...

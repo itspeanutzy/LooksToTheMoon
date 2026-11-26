@@ -2,30 +2,31 @@
 do ErmirLoop.play_bgm()
 join Ermir (Smug) right [animation="Bounce In" length="0.0"]
 join Seyche left [animation="Bounce In" length="0.0"]
-Ermir: Hah! You still haven’t lost your spark huh Seyche?
-Seyche (Uncomfortable): Whew- that was pretty challenging though...
+Ermir: Hah! [pause=0.4]You still haven’t lost your spark huh Seyche?
+Seyche (Uncomfortable): Whew-[pause=0.4] that was pretty challenging though...
 Ermir: Pfft yeah, this is nothing compared to my brother.
 Seyche (Surprised): You have a brother?...
-Ermir (Bored): Of course I do! Styrmir? The grumpy guy, big wings... Beard?
-Ermir: Don’t tell me you forgot
+Ermir (Bored): Of course I do! Styrmir? [pause=0.8]The grumpy guy,[pause=0.3] big wings...[pause=0.4] Beard?
+Ermir: Don’t tell me you forgot.
 update Seyche (Normal)
-[wait time="2.0"]
+[wait time="3.0"]
 Ermir: OH my god you forgot.
 Ermir (Neutral): That is so...
 He seemed serious for a bit.
-Ermir (Laugh): Hilarious! Phahahahahahahahahah!
-Ermir: Oh... Styrmir must be EMBARRASSED from what he did!
-Seyche (Uncomfortable): I’m sorry, I don’t quite follow?...
+Ermir (Laugh): Hilarious! [pause=0.8]PHAHAHAHAHAH!
+Ermir: Oh...[pause=0.6] Styrmir must be EMBARRASSED from what he did!
+Seyche (Uncomfortable): I’m sorry,[pause=0.4] I don’t quite follow?...
 update Ermir (Smug)
-[wait time="1.0"]
+[wait time="1.5"]
 Ermir: Try asking that one moon lady, whats her name..? Selyssha?
-Seyche (Normal): Celyna.
-Ermir (Laugh): Right! Her. Try asking her.
-Seyche: What does Celyna know about Strymir?
+Seyche (Determined): Celyna.
+Ermir (Laugh): Right![pause=0.4] Her.[pause=0.4] Try asking her.
+Seyche: What does Celyna know about Styrmir?
 Ermir (Neutral): Trust me, she knows way more than she lets on.
 Ermir (Laugh): Welp! Gotta go, my worshippers just built a cool flying machine, HAH! They’re becoming more and more like birds!
 leave Ermir
 do ErmirLoop.stop_bgm()
-Seyche (Surprised): Huh-! Hold on-... well there he goes..
+update Seyche center [move_time="1.0"]
+Seyche (Surprised): Huh-! [pause=0.4]Hold on-... [pause=0.4]well there he goes..
 Seyche: Wait, how did he know my name?...
 jump cycle3end2/

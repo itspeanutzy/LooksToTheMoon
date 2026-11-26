@@ -10,12 +10,22 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Worshipper F",
 &"description": "",
-&"display_name": "Child's mom",
+&"display_name": "Civillian 2",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Worshipper F": {
+"export_overrides": {
+"image": "\"res://assets/sprites/visualnovel/NPC/worshipper_f.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

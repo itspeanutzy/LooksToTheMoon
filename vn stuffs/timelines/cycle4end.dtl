@@ -1,4 +1,5 @@
 [background arg="res://assets/backgrounds/Krishark Sea Sunny.png" fade="0.0"]
+audio music "res://assets/audio/music/styrmir.ogg"
 join Seyche center
 join Strymir (Contemplate) center
 Strymir: Hmm...
@@ -11,3 +12,4 @@ Strymir: You have proven yourself worthy, congratulations.
 Seyche (Happy): Thank you sir!
 Strymir (Normal): I suppose I judged you too quickly, though you still have a long way to go, young one.
 Strymir: There are more who demand to witness your true potential.
+update Seyche (Determined)
