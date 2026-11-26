@@ -41,4 +41,5 @@ Ermir (Bored): You make a good point, [pause=0.2]that would give those merchants
 Seyche (Normal): So you agree that we should work together then?
 Ermir (Smug): Well…[pause=0.4] That’s not really a contest now is it?[pause=0.4] Oh wow look at the time the contest has just begun, Goodluck!
 Seyche (Surprised): Huh!?
+do ErmirLoop.stop_bgm()
 # guide a ship minigame

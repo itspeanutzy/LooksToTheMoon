@@ -51,3 +51,4 @@ Celyna: Yes, my dear?
 Seyche: You mentioned there are other gods besides us… [pause=0.5]who might they be?
 Celyna turned to Seyche with an inviting grin, [pause=0.2]her hand extended to the other goddess.
 Celyna (Giggle): Why don’t you find out instead? [pause=0.2]Your journey has only just begun.
+do CelyneLoop.stop_bgm()

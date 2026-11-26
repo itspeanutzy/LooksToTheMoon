@@ -136,14 +136,8 @@ func take_damage():
 		"position:x",
 		position.x - knockback_distance,
 		knockback_duration
-	).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	
-	tween.tween_property(
-		self,
-		"position:x",
-		original_x,
-		recovery_duration
-	).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
 	
 	await tween.finished
 	is_knocked_back = false

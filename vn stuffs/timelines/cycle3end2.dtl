@@ -17,3 +17,4 @@ Celyna: Back then, Styrmir disliked your worshippers and he had warned you about
 Celyna: You’ve told me about it.
 Celyna: Then you didn’t listen... [pause=0.4]And the rest... [pause=0.4]Well, Styrmir never went back on his word.
 Seyche (Normal): ... Oh...
+do CelyneLoop.stop_bgm()

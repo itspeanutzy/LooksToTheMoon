@@ -90,14 +90,15 @@ func end_minigame(is_win: bool):
 	for wave in get_tree().get_nodes_in_group("waves"): wave.queue_free()
 	
 	var prev_level = GameState.prosperity
-	
+	var level_scale = GameState.prosperity - 1
+
 	if is_win:
 		show_message("The Ship Sailed Safely!!!")
-		GameState.add_rewards(100, 50)
+		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
 		show_message("Your Ship Sank!\nGame Over")
-		GameState.add_rewards(50, 10)
-		
+		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 5)
+
 	await get_tree().create_timer(2.0).timeout
 	
 	if GameState.prosperity > prev_level:

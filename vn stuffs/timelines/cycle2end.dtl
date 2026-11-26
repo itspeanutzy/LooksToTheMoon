@@ -20,3 +20,4 @@ update Celyna (Giggle) [length="1.5"]
 An occasional chuckle came from Celyna after Seyche’s reply before returning to their comfortable silence.[pause=0.6] Some things don't always change from the past.
 At least...
 That’s what Celyna hoped.
+do CelyneLoop.stop_bgm()
