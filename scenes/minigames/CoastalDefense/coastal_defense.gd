@@ -7,6 +7,7 @@ extends Node2D
 @onready var health_bar = $HUD/BaseHealthBar
 @onready var win_sound = $win
 @onready var lose_sound = $lose
+@onready var loop_timer: Timer = $LoopTimer
 @export var enemy_scene: PackedScene
 @export var survive_timer: float = 30
 var time_left: float
@@ -16,8 +17,8 @@ enum MinigameState {INTRO, COUNTDOWN, PLAYING, END}
 var current_state = MinigameState.INTRO
 
 func _ready() -> void:
-	music_intro.finished.connect(_on_intro_finished)
 	music_intro.play()
+	loop_timer.start()
 	HUD.hide()
 	$HUD.hide()
 	
@@ -32,9 +33,6 @@ func _ready() -> void:
 	$Coast.base_destroyed.connect(_on_base_destroyed)
 	
 	show_message("Click anywhere to continue")
-
-func _on_intro_finished():
-	music_loop.play()
 
 func _input(event: InputEvent) -> void:
 	if current_state == MinigameState.INTRO and event.is_pressed() and event is InputEventMouseButton:
@@ -100,19 +98,24 @@ func end_minigame(is_win: bool) -> void:
 	
 	if is_win:
 		show_message("The Coast is Clear")
+		music_loop.stop()
 		win_sound.play()
 		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
 		show_message("Krishark Coast has Fallen!!")
+		music_loop.stop()
 		lose_sound.play()
 		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 15)
 		
 	for enemy in get_tree().get_nodes_in_group("Enemy"):
 		enemy.queue_free()
 		
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(4.0).timeout
 	
 	if GameState.prosperity > prev_level:
 		get_tree().change_scene_to_file("res://scenes/core/scene_manager.tscn")
 	else:
 		get_tree().change_scene_to_file("res://scenes/core/map.tscn")
+
+func _on_loop_timer_timeout() -> void:
+	music_loop.play()

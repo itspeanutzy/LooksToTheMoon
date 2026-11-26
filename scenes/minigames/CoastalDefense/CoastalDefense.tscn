@@ -85,6 +85,10 @@ autostart = true
 wait_time = 30.0
 autostart = true
 
+[node name="LoopTimer" type="Timer" parent="." unique_id=56137191]
+wait_time = 9.43
+one_shot = true
+
 [node name="lose" type="AudioStreamPlayer2D" parent="." unique_id=319955065]
 stream = ExtResource("10_boe0f")
 
@@ -97,3 +101,5 @@ stream = ExtResource("12_boe0f")
 [node name="loop" type="AudioStreamPlayer2D" parent="." unique_id=181843521]
 stream = ExtResource("13_ei2xr")
 parameters/looping = true
+
+[connection signal="timeout" from="LoopTimer" to="." method="_on_loop_timer_timeout"]

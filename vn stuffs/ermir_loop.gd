@@ -10,11 +10,10 @@ func _ready():
 	add_child(intro)
 	add_child(loop)
 
-	intro.stream = preload("res://assets/audio/music/ermir_intro.ogg")
+	intro.stream = preload("res://assets/audio/music/ermir.ogg")
 	loop.stream = preload("res://assets/audio/music/ermir_loop.ogg")
 
 	intro.finished.connect(_on_intro_finished)
-	loop.finished.connect(_on_loop_finished)
 
 
 func play_bgm():
@@ -22,14 +21,8 @@ func play_bgm():
 	intro.stop()
 	intro.play()
 
-
 func _on_intro_finished():
 	loop.play()
-
-
-func _on_loop_finished():
-	loop.play()
-
 
 func stop_bgm():
 	intro.stop()

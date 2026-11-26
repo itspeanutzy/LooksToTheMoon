@@ -90,17 +90,19 @@ func end_minigame(is_win: bool) -> void:
 	
 	if is_win:
 		show_message("The Harvest was Bountiful!")
+		$AudioStreamPlayer2D.stop()
 		win_sound.play()
 		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
-		show_message("And the Sea stay still")
+		show_message("And the Sea stood still...")
+		$AudioStreamPlayer2D.stop()
 		lose_sound.play()
 		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 15)
 	
 	for fish in get_tree().get_nodes_in_group("Fish"):
 		fish.queue_free()
 		
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(4.0).timeout
 	
 	if GameState.prosperity > prev_level:
 		get_tree().change_scene_to_file("res://scenes/core/scene_manager.tscn")

@@ -14,18 +14,19 @@ var timeline_sequence = {
 var _timeline_queue: Array = []
 
 func _ready() -> void:
+	
 	var current_level = GameState.prosperity
 	_timeline_queue = timeline_sequence.get(current_level, []).duplicate()
 	
 	if _timeline_queue.is_empty():
-		get_tree().change_scene_to_file.call_deferred(MAP_SCENE)
+		open_map()
 		return
 	
 	_play_next()
 
 func _play_next() -> void:
 	if _timeline_queue.is_empty():
-		get_tree().change_scene_to_file.call_deferred(MAP_SCENE)
+		open_map()
 		return
 	
 	var next_timeline = _timeline_queue.pop_front()
@@ -34,3 +35,6 @@ func _play_next() -> void:
 
 func _on_timeline_ended() -> void:
 	_play_next()  # mainin timeline berikutnya di queue, atau balik ke map kalau habis
+
+func open_map() -> void:
+	get_tree().change_scene_to_file.call_deferred(MAP_SCENE)

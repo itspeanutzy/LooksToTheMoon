@@ -9,7 +9,7 @@ extends Node2D
 @onready var ui = $UI
 @onready var win_sound = $win
 @onready var lose_sound = $lose
-
+@onready var loop_timer: Timer = $LoopTimer
 @export var game_duration: float = 30.0
 var level_timer: Timer
 const FinishLineScene = preload("res://scenes/minigames/BoatGuiding/FinishLine.tscn") # Sesuaikan path-nya!
@@ -18,8 +18,8 @@ enum MinigameState {INTRO, PLAYING, GAMEOVER, WIN}
 var current_state = MinigameState.INTRO
 
 func _ready():
-	music_intro.finished.connect(_on_intro_finished)
 	music_intro.play()
+	loop_timer.start()
 	add_to_group("game_manager")
 	HUD.hide()
 	ui.hide()
@@ -41,9 +41,6 @@ func _ready():
 	add_child(level_timer)
 	
 	show_message("Guide the Ship!\nClick anywhere to start")
-
-func _on_intro_finished():
-	music_loop.play()
 
 func _input(event):
 	if current_state == MinigameState.INTRO and event is InputEventMouseButton and event.pressed:
@@ -103,17 +100,22 @@ func end_minigame(is_win: bool):
 
 	if is_win:
 		show_message("The Ship Sailed Safely!!!")
+		music_loop.stop()
 		win_sound.play()
 		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 		
 	else:
 		show_message("Your Ship Sank!\nGame Over")
+		music_loop.stop()
 		lose_sound.play()
 		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 5)
 
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(4.0).timeout
 	
 	if GameState.prosperity > prev_level:
 		get_tree().change_scene_to_file("res://scenes/core/scene_manager.tscn")
 	else:
 		get_tree().change_scene_to_file("res://scenes/core/map.tscn")
+
+func _on_loop_timer_timeout() -> void:
+	music_loop.play()
