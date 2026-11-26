@@ -73,7 +73,7 @@ func _on_boat_area_entered(area: Area2D) -> void:
 	if area.is_in_group("Fish"):
 		area.queue_free()
 		fish_caught += 1
-		score_label.text = "Fish : " + str(fish_caught) + "/" + str(total_fish_needed)
+		score_label.text = str(fish_caught) + "/" + str(total_fish_needed)
 		
 		if fish_caught >= total_fish_needed:
 			end_minigame(true)
