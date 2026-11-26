@@ -1,7 +1,10 @@
+do CelyneLoop.play_bgm()
 [background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
+set {celyna_name} = "???"
+set {seyche_name} = "'Goddess'"
 join Seyche center [animation="Bounce In" length="0.0"]
 join Celyna center
-join Seyche left
+update Seyche left
 The Goddess of the sea stood by shore, gazing at the night sky. The moonlight was brighter than what she had seen before. Then, a ripple danced in the water, revealing a figure. Tall, elegant, and balanced between shadow and light.
 Celyna: ...
 Seyche (Happy): Oh! Hello there, it’s quite rare to see anyone roaming around in these hours.
@@ -16,9 +19,11 @@ The Goddess stood in silence. That name sounded unfamiliar yet it felt like it r
 Seyche: That's... a beautiful name.
 Celyna: It surely is.
 Celyna: Because it's yours.
+set {seyche_name} = "Seyche"
 Seyche (Surprised): !!
 Seyche, the sea Goddess, paused. How could this stranger know her name before she even knew it herself? Could she know more of her past? Or her? More questions kept flooding in unanswered, she didn't know where to begin.
 Seyche: ... Then... What's your name?
+set {celyna_name} = "Celyna"
 Celyna: Forgive me, that was rude of me for not introducing myself, you must be so confused. My name is Celyna. I am the Goddess of the moon.
 Seyche (Uncomfortable): No, it’s okay! Was just a bit startled hehe…
 Seyche (Normal): ...

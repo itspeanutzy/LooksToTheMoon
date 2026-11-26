@@ -1,3 +1,4 @@
+do CelyneLoop.play_bgm()
 [background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
 join Seyche left
 join Celyna center

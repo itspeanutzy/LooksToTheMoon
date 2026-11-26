@@ -1,9 +1,7 @@
 extends Camera2D
 
 @export var zoomSpeed: float = 10.0
-@export var intro_zoom: Vector2 = Vector2(0.3, 0.3)
 @export var normal_zoom: Vector2 = Vector2(1.0, 1.0)
-@export var intro_duration: float = 1.0
 @export var min_zoom: float = 0.3
 @export var max_zoom: float = 1.4
 
@@ -13,27 +11,13 @@ var dragStartMousePos = Vector2.ZERO
 var dragStartCameraPos = Vector2.ZERO
 var isDragging: bool = false
 
-var intro_finished: bool = false
-var intro_timer: float = 0.0
-
 
 func _ready():
-	zoom = intro_zoom
+	zoom = normal_zoom
 	zoomTarget = normal_zoom
 
 
 func _process(delta):
-	if not intro_finished:
-		intro_timer += delta
-
-		var progress = clamp(intro_timer / intro_duration, 0.0, 1.0)
-		zoom = intro_zoom.lerp(normal_zoom, progress)
-
-		if progress >= 1.0:
-			intro_finished = true
-
-		return
-
 	Zoom(delta)
 	SimplePan(delta)
 	ClickAndDrag()

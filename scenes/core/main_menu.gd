@@ -25,7 +25,7 @@ func _change_scene_with_fade(scene_path: String):
 
 
 func _on_start_pressed():
-	_change_scene_with_fade("res://scenes/core/map.tscn")
+	_change_scene_with_fade("res://scenes/core/scene_manager.tscn")
 	AudioManager.play_sfx(&"click")
 
 func _on_load_pressed():

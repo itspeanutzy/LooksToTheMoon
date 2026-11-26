@@ -1,9 +1,22 @@
 [gd_scene format=3 uid="uid://dwid3ksjwi42r"]
 
 [ext_resource type="Script" uid="uid://b5pm47y5i22g" path="res://scenes/core/map.gd" id="1_2klcf"]
-[ext_resource type="Texture2D" uid="uid://byco1r3ehv54k" path="res://assets/sprites/Blue Pink Yellow Pastel Line English Graphic Novel Conventions Presentation.pdf.png" id="1_4xfga"]
+[ext_resource type="Texture2D" uid="uid://dww3n38xc75w0" path="res://assets/sprites/map (temporary)/map.png" id="2_x0ctr"]
 [ext_resource type="PackedScene" uid="uid://chhfe0q4es5ks" path="res://scenes/core/settings.tscn" id="3_2lpho"]
 [ext_resource type="Script" uid="uid://y3kkga4xitlt" path="res://scenes/core/map_camera.gd" id="4_6psm2"]
+[ext_resource type="Texture2D" uid="uid://cbi687vw5tm7e" path="res://assets/sprites/map (temporary)/map_border.png" id="4_qditw"]
+[ext_resource type="Texture2D" uid="uid://cgewwt12jlfjo" path="res://assets/sprites/map (temporary)/quest.png" id="5_7k4hv"]
+[ext_resource type="Script" uid="uid://xy8lajnsnrp" path="res://scenes/core/hide_quests.gd" id="6_6bffb"]
+[ext_resource type="Script" uid="uid://ccfmw32nj5qt" path="res://scenes/core/hover_enlarge.gd" id="7_6bffb"]
+[ext_resource type="Texture2D" uid="uid://dlhmvpnrqdwst" path="res://assets/sprites/map (temporary)/questt_arrow.png" id="7_mh1bn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4v7s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mh1bn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6bffb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7k4hv"]
 
 [sub_resource type="GDScript" id="GDScript_8uyid"]
 script/source = "extends Button
@@ -18,7 +31,7 @@ script = ExtResource("1_2klcf")
 [node name="BluePinkYellowPastelLineEnglishGraphicNovelConventionsPresentation_pdf" type="Sprite2D" parent="." unique_id=1027498257]
 position = Vector2(575.99994, 324)
 scale = Vector2(0.6000012, 0.6)
-texture = ExtResource("1_4xfga")
+texture = ExtResource("2_x0ctr")
 
 [node name="Camera2D" type="Camera2D" parent="BluePinkYellowPastelLineEnglishGraphicNovelConventionsPresentation_pdf" unique_id=1704443722]
 position = Vector2(3.333374, 3.333374)
@@ -28,13 +41,52 @@ limit_top = 0
 limit_right = 1152
 limit_bottom = 648
 script = ExtResource("4_6psm2")
-intro_zoom = Vector2(1, 1)
 normal_zoom = Vector2(2, 2)
-intro_duration = 0.455
 min_zoom = 1.0
 max_zoom = 4.0
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=879326704]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=935609030]
+position = Vector2(575.7778, 324.00003)
+scale = Vector2(0.59999996, 0.59999996)
+texture = ExtResource("4_qditw")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=182750228]
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=1535708998]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 841.0
+offset_top = 419.0
+offset_right = 863.0
+offset_bottom = 482.0
+script = ExtResource("6_6bffb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer2/Control" unique_id=1781617997]
+position = Vector2(159.00006, 30.00003)
+scale = Vector2(0.51164883, 0.51164883)
+texture = ExtResource("5_7k4hv")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2/Control" unique_id=1672950155]
+position = Vector2(16.5, 15.74)
+scale = Vector2(0.7307692, 0.7307693)
+texture = ExtResource("7_mh1bn")
+script = ExtResource("7_6bffb")
+
+[node name="ArrowButton" type="Button" parent="CanvasLayer2/Control" unique_id=626592197]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -14.0
+offset_right = 28.0
+offset_bottom = 50.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g4v7s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mh1bn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6bffb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7k4hv")
+
 [node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=1419798378]
+visible = false
 position = Vector2(0, -3.0517578e-05)
 scale = Vector2(1.0000001, 1.0000001)
 

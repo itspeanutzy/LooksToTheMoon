@@ -1,3 +1,4 @@
+set {ermir_name} = "???"
 [background arg="res://assets/sprites/visualnovel/background/Krishark Sea Sunny.png" fade="0.0"]
 join Seyche center
 Within a small seaside temple dedicated to Seyche, merchants gather to pray.
@@ -12,6 +13,8 @@ Seyche (Uncomfortable): I’m sorry, but who are you…?
 Ermir (Laugh): I’m glad you asked!
 Ermir (Neutral): Although, you should have known me by now but I will re-introduce myself regardless!
 Ermir (Smug): I am the illustrious, magnificent, amazing, and extraordinary god of the winds,
+set {ermir_name} = "Ermir"
+Ermir: Ermir!
 Seyche: Oh… another god…? It’s ummm… nice to meet you? I am Seyche, the new goddess of Kerishark Sea.
 Ermir (Bored): I know that, every god does. I came here because of the AUDACITY of these merchants to pray to..
 Ermir: you...

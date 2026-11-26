@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3y3ndvnoqfgm"]
 
-[ext_resource type="Script" uid="uid://d0elaps4cn71f" path="res://scripts/wakeblink.gd" id="1_07usc"]
+[ext_resource type="Script" uid="uid://d0elaps4cn71f" path="res://scenes/visual_novel/wakeblink.gd" id="1_07usc"]
 [ext_resource type="Shader" uid="uid://d2yvgc31x5kug" path="res://scenes/blur.gdshader" id="2_uufc6"]
 [ext_resource type="Shader" uid="uid://gffnsg32tm3x" path="res://scenes/motion blur.gdshader" id="3_s5hts"]
 

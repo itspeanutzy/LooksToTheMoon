@@ -12,7 +12,7 @@
 },
 &"default_portrait": "Normal",
 &"description": "masih placeholder y guys i wanna test shit out",
-&"display_name": "{seyche_name_hidden}",
+&"display_name": "{seyche_name}",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),

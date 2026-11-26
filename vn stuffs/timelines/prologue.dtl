@@ -1,25 +1,27 @@
+set {seyche_name} = "'Goddess'"
 [signal arg="lids_close"]
-A heavy weight surrounds you, pressing you from all sides. Regardless, you can feel yourself take up more space.
+A heavy weight surrounds you, pressing you from all sides. [pause=0.8] Regardless, you can feel yourself take up more space.
 ...
-It pours through every crevice in your body. You can hear rumbles and cries in the distance. A small, soft frame is swept up into your palms. The cries stop.\
-Within minutes, that body is lifted from your hands.
+It pours through every crevice in your body. [pause=0.4] You can hear rumbles and cries in the distance. [pause=0.4] A small, soft frame is swept up into your palms. [pause=0.8] The cries stop.\
+[pause=0.6] Within minutes, that body is lifted from your hands.
 [background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
 join Seyche (Normal) center [animation="Bounce In" length="0.0"]
 [signal arg="lids_blink"]
 [lspeed=0.8]...
 [lspeed=0.8]....
-"A child": [lspeed=0.5]...[lspeed=0.3]th[pause=1][lspeed=0.1]..u
+"A child": [lspeed=0.5]...[lspeed=0.3]th[pause=0.8][lspeed=0.1]..u
 Seyche: [lspeed=0.5]...[lspeed=0.2]huh?
 "A child": Thank you so much!
-Seyche: [lspeed=0.1]What… [pause=0.2]just happened?
+Seyche: [lspeed=0.1]What… [pause=0.4] just happened?
 A small high pitched voice could be heard from Goddess’s arms.
 "A child": Thank you so much for saving me, pretty lady!
 update Seyche [animation="Shake X"]
-Seyche (Surprised): O-oh… [pause=0.2] yes? [pause=0.5] You’re welcome!
-"Civillian 1": You… [pause=0.5]have saved my daughter…
-"Civillian 2": From those waves and harsh tides[lspeed=0.3]... [pause=0.3][lspeed]Could it truly be…
-"Civillian 1": Have you finally returned to us, [pause=0.2]O Goddess of the sea?
-The Goddess turned her gaze towards the civilians.[pause=0.5]The words a mystery to her, but not entirely.[pause=0.5] A quiet thread of familiarity tugged her. [pause=0.5]Like a voice heard in a distant time.[pause=0.5] It didn’t make sense, but it felt like coming back home.
-"A child": Pretty lady… [pause=0.5]is a sea goddess?
-Seyche (Happy): *chuckles* [pause=1] Suppose I am.
-The word of her return spread among the people faster than the early snow of winter. Long forgotten temples began to stir with repairs and offerings were laid. Prayers, though still few, rose like incense toward the newly born goddess. Her work, it seemed, had already begun.
+Seyche (Surprised): O-oh… [pause=0.3] yes? [pause=0.6] You’re welcome!
+"Civillian 1": You… [pause=0.6] have saved my daughter…
+"Civillian 2": From those waves and harsh tides[lspeed=0.3]... [pause=0.5][lspeed] Could it truly be…
+"Civillian 1": Have you finally returned to us, [pause=0.4] O Goddess of the sea?
+The Goddess turned her gaze towards the civilians. [pause=0.6] The words a mystery to her, but not entirely. [pause=0.6] A quiet thread of familiarity tugged her. [pause=0.6] Like a voice heard in a distant time. [pause=0.6] It didn’t make sense, but it felt like coming back home.
+"A child": Pretty lady… [pause=0.5] is a sea goddess?
+Seyche (Happy): *chuckles* [pause=0.8] Suppose I am.
+The word of her return spread among the people faster than the early snow of winter. [pause=0.8]Long forgotten temples began to stir with repairs [pause=0.5] and offerings were laid. [pause=1.0]Prayers, though still few, rose like incense toward the newly born goddess. [pause=1.0]Her work, it seemed, had already begun.
+[end_timeline]

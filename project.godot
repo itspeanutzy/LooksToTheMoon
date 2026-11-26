@@ -25,6 +25,7 @@ GameState="*uid://dst00c5k6xuha"
 AudioManager="*uid://dsa6nado6xd5r"
 Utils="*uid://b8er3g5m4dx8f"
 HUD="*uid://bx8eio8x2guwo"
+CelyneLoop="*uid://6jj7alkv5k0t"
 
 [dialogic]
 
@@ -58,7 +59,10 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://vn stuffs/style.tres"]
 layout/default_style="res://vn stuffs/style.tres"
 variables={
-"seyche_name_hidden": "'Goddess'"
+"celyna_name": "Celyna",
+"ermir_name": "Ermir",
+"seyche_name": "Seyche",
+"strymir_name": "Strymir"
 }
 text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
@@ -96,7 +100,6 @@ history/simple_history_enabled=false
 
 [display]
 
-window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="uid://bv2qijiqb4qgq"

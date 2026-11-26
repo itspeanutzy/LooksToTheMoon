@@ -10,8 +10,8 @@ const LID_BLUR_MAX := 0.1
 
 
 func _ready() -> void:
-	_set_closed(1.0)
-	_set_blur(BLUR_MAX)
+	_set_closed(0.0)
+	_set_blur(0.0)
 	_set_lid_blur(0.0)
 	Dialogic.signal_event.connect(_on_signal)
 
