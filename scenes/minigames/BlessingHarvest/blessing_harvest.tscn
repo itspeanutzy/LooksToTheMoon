@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b862pqkx2t014" path="res://assets/sprites/ui/Fih box.png" id="7_siau4"]
 [ext_resource type="AudioStream" uid="uid://bh8v83kxm3ra4" path="res://assets/audio/sfx/fail.ogg" id="9_cd7ko"]
 [ext_resource type="AudioStream" uid="uid://5xk208r7by15" path="res://assets/audio/sfx/win.ogg" id="10_0kosj"]
+[ext_resource type="AudioStream" uid="uid://cvfdxtnr0mq6x" path="res://assets/audio/music/fish_harvest.ogg" id="11_0kosj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(884.7815, 584.3994)
@@ -117,6 +118,10 @@ stream = ExtResource("9_cd7ko")
 
 [node name="win" type="AudioStreamPlayer2D" parent="." unique_id=1319299296]
 stream = ExtResource("10_0kosj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1893551870]
+stream = ExtResource("11_0kosj")
+autoplay = true
 
 [connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
 [connection signal="area_entered" from="Boat1" to="." method="_on_boat_area_entered"]
