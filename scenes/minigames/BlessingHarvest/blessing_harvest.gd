@@ -84,13 +84,14 @@ func end_minigame(is_win: bool) -> void:
 	$HUD.hide()
 	
 	var prev_level = GameState.prosperity 
+	var level_scale = GameState.prosperity - 1
 	
 	if is_win:
 		show_message("The Harvest was Bountiful!")
-		GameState.add_rewards(100, 50)
+		GameState.add_rewards(100 + level_scale * 50, 50 + level_scale * 25)
 	else:
 		show_message("And the Sea stay still")
-		GameState.add_rewards(50, 10)
+		GameState.add_rewards(50 + level_scale * 25, 10 + level_scale * 15)
 	
 	for fish in get_tree().get_nodes_in_group("Fish"):
 		fish.queue_free()
