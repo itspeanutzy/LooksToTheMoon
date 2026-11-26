@@ -1,24 +1,25 @@
 set {strymir_name} = "???"
+audio music "res://assets/audio/music/styrmir.ogg"
 [background arg="res://assets/backgrounds/Krishark Sea Stormy.png" fade="0.0"]
 join Seyche left
 join Strymir right
 Strymir: So you do dare to return?
-Seyche (Surprised): You! You’re...
-Seyche (Determined): You’re.. Styrmir..
+Seyche (Surprised): You! [pause=0.4]You’re...
+Seyche (Determined): [lspeed=0.1]You’re.. [pause=0.4]Styrmir..
 set {strymir_name} = "Styrmir"
-Strymir: Correct. At least your mind is still intact. Seyche.
-Seyche (Uncomfortable): I.. Y-yes of course it is. Sir. Why wouldn’t it be?
-Strymir (Cussing): Don’t act coy with me, woman! Last time we met; you acted with so little dignity and respect; it disgusts me.
-Seyche: What?... I..
+Strymir: Correct. [pause=0.8]At least your mind is still intact. [pause=0.4]Seyche.
+Seyche (Uncomfortable): I..[pause=0.4] Y-yes of course it is. Sir. Why wouldn’t it be?
+Strymir (Cussing): Don’t act coy with me, woman! [pause=0.4]Last time we met; you acted with so little dignity and respect;[pause=0.4] it disgusts me.
+Seyche: What?[pause=0.4][lspeed=0.1]... I..
 Seyche (Normal): Sir,
-Seyche: I’m not who I was before. I changed!
+Seyche (Uncomfortable): I’m not who I was before. I changed!
 update Strymir (Mad)
 [wait time="2.0"]
-Seyche: I-.. People go up to me and expect this Seyche from before but I’m NOT her
+Seyche: I-..[pause=0.4] People go up to me and expect this Seyche from before but I’m NOT her
 Strymir: ... Prove it.
-Seyche (Uncomfortable): I don’t even- What?
+Seyche (Uncomfortable): I don’t even-[pause=0.6] What?
 Strymir: If you’ve changed. Prove it to me.
 Seyche: ...
 Seyche: ...How do I prove it.
-Strymir: I shall send a great and terrible storm across these waters, one so great that your temples shall fall and your sailors shall drown. If your followers can weather the storm, you MIGHT get my approval.
+Strymir: I shall send a great and terrible storm across these waters, one so great that your temples shall fall and your sailors shall drown.[pause=0.4] If your followers can weather the storm, you MIGHT get my approval.
 Seyche (Determined): Yes sir.
