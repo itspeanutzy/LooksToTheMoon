@@ -2,9 +2,8 @@ do CelyneLoop.play_bgm()
 [background arg="res://assets/backgrounds/PART OF YOUR WORLD.png" fade="0.0"]
 set {celyna_name} = "???"
 set {seyche_name} = "'Goddess'"
-join Seyche center [animation="Bounce In" length="0.0"]
-join Celyna center
-update Seyche left
+join Seyche left [animation="Bounce In" length="0.0"]
+join Celyna right
 The Goddess of the sea stood by shore, gazing at the black night sky. [pause=0.5]The moonlight was almost as bright as the bright warm orb just a few hours before.[pause=0.5] Then,[pause=0.2] a ripple danced in the water echoing several rings across the surface before revealing a figure. [pause=0.5]The lady was tall, [pause=0.2]elegant [pause=0.2], and a perfect balanced between shadow and light.
 Celyna: ...
 Seyche (Happy): Oh! [pause=0.3] Hello there, [pause=0.1]it’s quite rare to see anyone roaming around in these hours.
@@ -18,18 +17,18 @@ Celyna: You really have returned... [pause=0.2]Seyche.
 The Goddess stood in silence. [pause=0.5] That name sounded unfamiliar yet it felt like it resonated with her, [pause=0.2] as though it has always been there. [pause=0.5]Like it had been waiting. [pause=0.5] As if, [pause=0.2]in some forgotten corner of her,[pause=0.2] it had always fit.
 Seyche: That's[lspeed=0.5]...[pause=0.6[lspeed] a beautiful name.
 Celyna: It surely is.
-Celyna: Because it's yours.
+Celyna (Flirt): Because it's yours.
 set {seyche_name} = "Seyche"
 update Seyche (Surprised) [animation="Shake X"]
 Seyche: !!
 Seyche’s breath was held between her lips. [pause=0.5]How could this stranger have known her name before she even knew it herself?[pause=0.5] What else about her past could she know?[pause=0.5] Or her?[pause=0.5] More questions kept flooding in unanswered,[pause=0.2] so much so she didn't know where to begin.
 Seyche: [lspeed=0.1]... Then... [pause=0.5][lspeed]What's your name?
 set {celyna_name} = "Celyna"
-Celyna: Forgive me,[pause=0.2] that was rude of me to not introduce myself.[pause=0.5] You must be so confused.[pause=0.5] My name is Celyna. [pause=0.5]I am the Goddess of the Moon.
+Celyna (Sad): Forgive me,[pause=0.2] that was rude of me to not introduce myself.[pause=0.5] You must be so confused.[pause=0.5] My name is Celyna. [pause=0.5]I am the Goddess of the Moon.
 Seyche (Uncomfortable): No,[pause=0.2] it’s okay![pause=0.5] Was just a bit startled [lspeed=0.1]hehe…
 Seyche (Uncomfortable): ...
 Seyche: So, [pause=0.2]does that mean there are more Gods too?[pause=0.5] Besides you and I?
-Celyna: Of course there are.
+Celyna (Neutral): Of course there are.
 The realization that there could be others,Gods sharing the same responsibility of protecting the islands,[pause=0.2] somewhat eased her. [pause=0.5]She wasn’t alone after all.
 Seyche (Happy): Well,[pause=0.2] it’s good to know that we’re not entirely holding this up alone!
 A warm smile spread across Seyche’s face.[pause=0.5] The moon goddess paused,[pause=0.2] gaze locked onto her beaming face.[pause=0.5] And something in her chest tightened.
@@ -37,18 +36,18 @@ A flicker of recognition.
 In the silence,[pause=0.2] the air was filled with unspoken things.[pause=0.5] Most of them are unknown to Seyche.[pause=0.5] With each second,[pause=0.2] the sea Goddess starts to process every single grain of sand that sits underneath her feet.[pause=0.5] As the waves rise up to the sand,[pause=0.2] one decides to break the silence.
 Seyche: [lspeed=0.2]...[lspeed]May I ask a question?
 Celyna: ...
-Celyna: Of course you may, dear.
+Celyna (Giggle): Of course you may, dear.
 Seyche: What do you do as a moon goddess, Celyna?
-Celyna: Well,[pause=0.1] it’s quite simple actually.
+Celyna (Neutral): Well,[pause=0.1] it’s quite simple actually.
 Celyna: As the goddess of the moon I, too,[pause=0.2] share in the duty of protecting humanity.[pause=0.5] In their nights,[pause=0.2] their dreams,[pause=0.2] and their journey under my light.
 Celyna: Each and every prayer will be answered,[pause=0.2] whether through direct aid or gentle guidance.
 Celyna: And it seems that you, too,[pause=0.3] have begun to win the hearts of humanity.
 Seyche (Happy): Well,[pause=0.1] I do want to help them after all.
-Celyna: Aren’t you adorable.
+Celyna (Flirt): Aren’t you adorable.
 As the conversation flowed, the two goddesses began to stroll along the coast side.[pause=0.5] The waves and the stars kept them company.
-# #footstep sound effect
+audio "res://assets/audio/sfx/walk_sand.mp3"
 Seyche (Normal): Say, Celyna.
 Celyna: Yes, my dear?
 Seyche: You mentioned there are other gods besides us… [pause=0.5]who might they be?
 Celyna turned to Seyche with an inviting grin, [pause=0.2]her hand extended to the other goddess.
-Celyna: Why don’t you find out instead? [pause=0.2]Your journey has only just begun.
+Celyna (Giggle): Why don’t you find out instead? [pause=0.2]Your journey has only just begun.

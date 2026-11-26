@@ -1,14 +1,16 @@
+audio music "res://assets/audio/music/seyche_theme.ogg"
 [background arg="res://assets/backgrounds/Seyche Temple + Beach.png" fade="0.0"]
-join Seyche center
-The young Goddess walks on the surface of her sparkling waters, pondering her past yet finding nothing in the depths of her memories. She walks towards the small fishing town from which she was born, watching an old fisherman preparing his vessel. The man’s eyes seem to be full of history and experience.
+join Seyche left
+join Fisherman right
+The young Goddess walks on the surface of her sparkling waters, [pause=0.1]pondering her past yet finding nothing in the depths of her memories.[pause=0.8] She walks towards the small fishing town from which she was born, watching an old fisherman preparing his vessel.[pause=0.] The man’s eyes seem to be full of history and experience.
 Seyche: Good morning, dear fisherman.
 Fisherman: Ah, [pause=0.5]my Goddess... [pause=0.5]I did not expect you to suddenly appear in front of a fisherman like me.
 The fisherman stops for a moment upon noticing Seyche’s presence and places his crates on the dock.
-Seyche: Well, there is a reason as to why, and it’s because I need to ask you something.
-Seyche: You seem like someone who has lived a long life, full of stories and adventures I’m sure. I was wondering whether you could tell me a little about the old sea Goddess.
-Fisherman: Ah, well… I don’t know any specific history behind the old civilization that lived here, but all I know is the tale my forefathers have told me of this place.
-Seyche: Oh? Do tell.
-Fisherman: They say that centuries ago, there was a great storm that raged on for several moons and buried the old cities by the coast.
-Seyche: I see… is there anything else that you know?
+Seyche: Well,[pause=0.2] there is a reason as to why,[pause=0.2] and it’s because I need to ask you something.
+Seyche: You seem like someone who has lived a long life,[pause=0.5] full of stories and adventures I’m sure.[pause=0.8] I was wondering whether you could tell me a little about the old sea Goddess.
+Fisherman: Ah, [lspeed=0.1]well... [lspeed]I don’t know any specific history behind the old civilization that lived here, [pause=0.2]but all I know is the tale my forefathers have told me of this place.
+Seyche: Oh?[pause=0.8] Do tell.
+Fisherman: They say that centuries ago,[pause=0.1] there was a great storm that raged on for several moons and buried the old cities by the coast.
+Seyche: I see…[pause=0.6] is there anything else that you know?
 Fisherman: I’m afraid not, my goddess.
-Seyche: Very well. I thank you regardless.
+Seyche: Very well.[pause=0.5] I thank you regardless.
