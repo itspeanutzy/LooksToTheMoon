@@ -7,12 +7,15 @@
 [ext_resource type="Script" uid="uid://8e0ubkfe2d2i" path="res://scenes/minigames/BoatGuiding/guide_a_ship_cam.gd" id="3_dlwrd"]
 [ext_resource type="Texture2D" uid="uid://beq1xdoat6e2o" path="res://assets/sprites/minigames/GuidingBoat/seascroll.png" id="4_cb5u0"]
 [ext_resource type="Script" uid="uid://vr2vjkn4ynm3" path="res://scenes/minigames/BoatGuiding/UI.gd" id="5_m4dej"]
-[ext_resource type="Texture2D" uid="uid://bkynij2oor6it" path="res://assets/sprites/minigames/Vector 1 1.png" id="6_aoics"]
+[ext_resource type="FontFile" uid="uid://c5snfvev1ffim" path="res://assets/fonts/Oregano-Regular.ttf" id="8_x6alv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x6alv"]
 shader = ExtResource("2_dlwrd")
 shader_parameter/direction = Vector2(1, 0)
 shader_parameter/speed = 0.1
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_doaq0"]
+load_path = "res://.godot/imported/Health.png-be64a740fdcc1ef6b057ddc43595a303.ctex"
 
 [node name="Node2D" type="Node2D" unique_id=1178880898]
 script = ExtResource("1_m4dej")
@@ -48,17 +51,17 @@ theme_override_constants/separation = 0
 
 [node name="Life1" type="TextureRect" parent="UI/HBoxContainer" unique_id=1993363827]
 layout_mode = 2
-texture = ExtResource("6_aoics")
+texture = SubResource("CompressedTexture2D_doaq0")
 stretch_mode = 5
 
 [node name="Life2" type="TextureRect" parent="UI/HBoxContainer" unique_id=1238662403]
 layout_mode = 2
-texture = ExtResource("6_aoics")
+texture = SubResource("CompressedTexture2D_doaq0")
 stretch_mode = 5
 
 [node name="Life3" type="TextureRect" parent="UI/HBoxContainer" unique_id=802939994]
 layout_mode = 2
-texture = ExtResource("6_aoics")
+texture = SubResource("CompressedTexture2D_doaq0")
 stretch_mode = 5
 
 [node name="Overlay" type="CanvasLayer" parent="." unique_id=1194142961]
@@ -76,6 +79,7 @@ offset_left = 227.0
 offset_top = 268.0
 offset_right = 956.0
 offset_bottom = 335.0
+theme_override_fonts/font = ExtResource("8_x6alv")
 theme_override_font_sizes/font_size = 54
 horizontal_alignment = 1
 vertical_alignment = 1

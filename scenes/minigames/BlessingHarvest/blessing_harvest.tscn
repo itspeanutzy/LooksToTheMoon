@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://beq1xdoat6e2o" path="res://assets/sprites/minigames/GuidingBoat/seascroll.png" id="3_wgdlm"]
 [ext_resource type="Texture2D" uid="uid://dutsod17v4o5l" path="res://assets/sprites/minigames/HarvestFish/ship.png" id="4_wgdlm"]
 [ext_resource type="FontFile" uid="uid://cikimk87ijdl2" path="res://assets/fonts/Oregano-Italic.ttf" id="5_dyaw6"]
+[ext_resource type="Texture2D" uid="uid://boh24s7dqox0v" path="res://assets/sprites/ui/Time Box.png" id="6_pslgi"]
+[ext_resource type="FontFile" uid="uid://c5snfvev1ffim" path="res://assets/fonts/Oregano-Regular.ttf" id="6_y1itr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
 size = Vector2(884.7815, 584.3994)
@@ -79,12 +81,22 @@ theme_override_fonts/font = ExtResource("5_dyaw6")
 theme_override_font_sizes/font_size = 32
 
 [node name="Timer" type="Label" parent="HUD" unique_id=2071639525]
-offset_left = 33.0
-offset_top = 552.0
-offset_right = 290.0
-offset_bottom = 622.0
-theme_override_fonts/font = ExtResource("5_dyaw6")
-theme_override_font_sizes/font_size = 34
+offset_left = 972.0
+offset_top = 564.5
+offset_right = 1062.0
+offset_bottom = 609.5
+theme_override_colors/font_color = Color(0.1668399, 0.1342957, 0.14306188, 1)
+theme_override_fonts/font = ExtResource("6_y1itr")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1657477214]
+offset_left = 937.0
+offset_top = 527.0
+offset_right = 1318.0
+offset_bottom = 734.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_pslgi")
 
 [connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]
 [connection signal="area_entered" from="Boat1" to="." method="_on_boat_area_entered"]

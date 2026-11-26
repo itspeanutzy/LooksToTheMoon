@@ -61,10 +61,6 @@ layout/style_list=["res://vn stuffs/style.tres"]
 layout/default_style="res://vn stuffs/style.tres"
 variables={
 "seyche_name_hidden": "'Goddess'"
-"celyna_name": "Celyna",
-"ermir_name": "Ermir",
-"seyche_name": "Seyche",
-"strymir_name": "Styrmir"
 }
 text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
@@ -104,6 +100,7 @@ history/simple_history_enabled=false
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 mouse_cursor/custom_image="uid://bv2qijiqb4qgq"
 
 [editor_plugins]

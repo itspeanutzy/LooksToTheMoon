@@ -63,7 +63,7 @@ func spawn_fish() -> void:
 func _process(delta: float) -> void:
 	if current_state == MinigameState.PLAYING:
 		time_left -= delta
-		$HUD/Timer.text = "Time: " + str(int(time_left))
+		$HUD/Timer.text = str(int(time_left))
 		
 		if time_left <= 0:
 			time_left = 0
