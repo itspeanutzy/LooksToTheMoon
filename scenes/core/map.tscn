@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://xy8lajnsnrp" path="res://scenes/core/hide_quests.gd" id="6_6bffb"]
 [ext_resource type="Script" uid="uid://ccfmw32nj5qt" path="res://scenes/core/hover_enlarge.gd" id="7_6bffb"]
 [ext_resource type="Texture2D" uid="uid://dlhmvpnrqdwst" path="res://assets/sprites/map (temporary)/questt_arrow.png" id="7_mh1bn"]
+[ext_resource type="Texture2D" uid="uid://kfhly60qvs5y" path="res://icon.svg" id="10_mh1bn"]
+[ext_resource type="Script" uid="uid://bitrr2k6li130" path="res://scenes/core/map_button.gd" id="11_4hq1i"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4v7s"]
 
@@ -85,18 +87,77 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_mh1bn")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6bffb")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7k4hv")
 
+[node name="Slot1" type="TextureButton" parent="." unique_id=1925580883]
+offset_left = 387.00003
+offset_top = 108.0
+offset_right = 515.0
+offset_bottom = 236.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("10_mh1bn")
+stretch_mode = 0
+script = ExtResource("11_4hq1i")
+
+[node name="Label" type="Label" parent="Slot1" unique_id=1274812417]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot2" type="TextureButton" parent="." unique_id=1430610056]
+offset_left = 152.0
+offset_top = 371.0
+offset_right = 280.0
+offset_bottom = 499.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("10_mh1bn")
+stretch_mode = 0
+script = ExtResource("11_4hq1i")
+
+[node name="Label" type="Label" parent="Slot2" unique_id=578567621]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot3" type="TextureButton" parent="." unique_id=1543840683]
+offset_left = 570.0
+offset_top = 264.0
+offset_right = 698.0
+offset_bottom = 392.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("10_mh1bn")
+stretch_mode = 0
+script = ExtResource("11_4hq1i")
+
+[node name="Label" type="Label" parent="Slot3" unique_id=463856903]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Slot4" type="TextureButton" parent="." unique_id=1373869956]
+offset_left = 245.0
+offset_top = 524.0
+offset_right = 373.0
+offset_bottom = 652.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("10_mh1bn")
+stretch_mode = 0
+script = ExtResource("11_4hq1i")
+
+[node name="Label" type="Label" parent="Slot4" unique_id=134846759]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
 [node name="CanvasGroup" type="CanvasGroup" parent="." unique_id=1419798378]
-visible = false
-position = Vector2(0, -3.0517578e-05)
+position = Vector2(0, -6.1035156e-05)
 scale = Vector2(1.0000001, 1.0000001)
 
 [node name="settings" parent="CanvasGroup" unique_id=286645141 instance=ExtResource("3_2lpho")]
 process_mode = 3
-visible = false
 
 [node name="fade" type="ColorRect" parent="CanvasGroup" unique_id=1133793577]
 offset_right = 1154.9999
 offset_bottom = 650.99994
+mouse_filter = 2
 color = Color(0, 0, 0, 0.40392157)
 
 [node name="Button" type="Button" parent="CanvasGroup" unique_id=820585419]
@@ -107,4 +168,8 @@ offset_bottom = 641.99994
 text = "Settings"
 script = SubResource("GDScript_8uyid")
 
+[connection signal="pressed" from="Slot1" to="Slot1" method="_on_pressed"]
+[connection signal="pressed" from="Slot2" to="Slot2" method="_on_pressed"]
+[connection signal="pressed" from="Slot3" to="Slot3" method="_on_pressed"]
+[connection signal="pressed" from="Slot4" to="Slot4" method="_on_pressed"]
 [connection signal="pressed" from="CanvasGroup/Button" to="CanvasGroup/Button" method="_on_pressed"]
