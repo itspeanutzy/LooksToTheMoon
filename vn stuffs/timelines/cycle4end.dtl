@@ -1,7 +1,7 @@
 [background arg="res://assets/backgrounds/Krishark Sea Sunny.png" fade="0.0"]
 audio music "res://assets/audio/music/styrmir.ogg"
-join Seyche center
-join Strymir (Contemplate) center
+join Seyche left [animation="Bounce In" length="0.0"]
+join Strymir (Contemplate) left [animation="Bounce In" length="0.0"]
 Strymir: Hmm...
 Seyche: How did I do  sir?
 Strymir: ...
