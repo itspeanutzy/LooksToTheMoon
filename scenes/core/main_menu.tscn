@@ -190,3 +190,5 @@ autoplay = true
 [connection signal="pressed" from="buttons/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="buttons/credit" to="." method="_on_credit_pressed"]
 [connection signal="pressed" from="buttons/quit" to="." method="_on_quit_pressed"]
+
+[editable path="Control/menu"]
