@@ -5,6 +5,7 @@ Within a small seaside temple dedicated to Seyche, merchants gather to pray.
 "Civillian 1": Oh Great Seyche, please bless our travels. The winds of commerce are approaching, and we pray for your protection in your waters.
 Seyche listens to their prayers from a distance until they finish and leave the temple.
 update Seyche left [move_time="1.0"]
+do ErmirLoop.play_bgm()
 join Ermir (Bored) right [animation="Slide In Up" length="1.0"]
 Ermir: Well, well, well! What oh what! do we have here?
 Seyche turns around as a heavy gust of wind blows towards her, and sees a winged man flying above her waters.
