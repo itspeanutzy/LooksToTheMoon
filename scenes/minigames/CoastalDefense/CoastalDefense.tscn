@@ -4,12 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://b6mn30pejj3ki" path="res://scenes/minigames/CoastalDefense/enemy_boat_s.tscn" id="2_7on7f"]
 [ext_resource type="Texture2D" uid="uid://beq1xdoat6e2o" path="res://assets/sprites/minigames/GuidingBoat/seascroll.png" id="3_xcvmj"]
 [ext_resource type="PackedScene" uid="uid://xj0gg6m1xh5g" path="res://scenes/minigames/CoastalDefense/coast_base.tscn" id="4_jdjkp"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vivr"]
-bg_color = Color(0.6, 0.6, 0.6, 0.4627451)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8vrlf"]
-bg_color = Color(0.20492753, 0.6940999, 0.5441691, 1)
+[ext_resource type="Texture2D" uid="uid://boh24s7dqox0v" path="res://assets/sprites/ui/Time Box.png" id="5_7on7f"]
+[ext_resource type="FontFile" uid="uid://c5snfvev1ffim" path="res://assets/fonts/Oregano-Regular.ttf" id="5_roenl"]
+[ext_resource type="Texture2D" uid="uid://tc1rsifo4875" path="res://assets/sprites/ui/Defense Bar Border.png" id="7_kf8pu"]
+[ext_resource type="Texture2D" uid="uid://djug08lbor5ha" path="res://assets/sprites/ui/Defense Bar box.png" id="8_mh1kp"]
+[ext_resource type="Texture2D" uid="uid://daksiom0i1csb" path="res://assets/sprites/ui/Defense Bar Isian.png" id="9_617rf"]
 
 [node name="Node2D" type="Node2D" unique_id=1602725757]
 script = ExtResource("1_xcvmj")
@@ -37,6 +36,7 @@ offset_left = 227.0
 offset_top = 268.0
 offset_right = 956.0
 offset_bottom = 335.0
+theme_override_fonts/font = ExtResource("5_roenl")
 theme_override_font_sizes/font_size = 54
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -44,30 +44,34 @@ vertical_alignment = 1
 [node name="HUD" type="CanvasLayer" parent="." unique_id=810766866]
 
 [node name="TimeLabel" type="Label" parent="HUD" unique_id=525192512]
-offset_left = 37.0
-offset_top = 561.0
-offset_right = 294.0
-offset_bottom = 631.0
-theme_override_font_sizes/font_size = 34
+z_index = 2
+offset_left = 964.0
+offset_top = 569.0
+offset_right = 1057.0
+offset_bottom = 604.0
+theme_override_colors/font_color = Color(0.17462179, 0.11022783, 0.11034275, 1)
+theme_override_fonts/font = ExtResource("5_roenl")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 2
 
-[node name="BaseHealthBar" type="ProgressBar" parent="HUD" unique_id=371937548]
-offset_left = 17.0
-offset_top = 45.0
-offset_right = 407.0
-offset_bottom = 77.0
-theme_override_styles/background = SubResource("StyleBoxFlat_1vivr")
-theme_override_styles/fill = SubResource("StyleBoxFlat_8vrlf")
+[node name="TextureRect" type="TextureRect" parent="HUD" unique_id=968685372]
+offset_left = 937.0
+offset_top = 527.0
+offset_right = 1318.0
+offset_bottom = 734.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_7on7f")
+
+[node name="BaseHealthBar" type="TextureProgressBar" parent="HUD" unique_id=274370457]
+offset_left = 33.0
+offset_top = 21.0
+offset_right = 727.0
+offset_bottom = 231.0
+scale = Vector2(0.5, 0.5)
 max_value = 10.0
-
-[node name="Label" type="Label" parent="HUD/BaseHealthBar" unique_id=294337906]
-layout_mode = 0
-offset_left = 17.0
-offset_top = -37.0
-offset_right = 162.0
-offset_bottom = -1.0
-theme_override_font_sizes/font_size = 26
-text = "Coast"
-vertical_alignment = 1
+texture_under = ExtResource("7_kf8pu")
+texture_over = ExtResource("8_mh1kp")
+texture_progress = ExtResource("9_617rf")
 
 [node name="SpawnTimer" type="Timer" parent="." unique_id=1866177345]
 wait_time = 1.5

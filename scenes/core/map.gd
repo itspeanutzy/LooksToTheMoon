@@ -55,3 +55,8 @@ func _change_scene_with_fade(scene_path: String):
 	await get_tree().create_timer(0.1).timeout
 	
 	get_tree().change_scene_to_file(scene_path)
+
+
+func _on_texture_button_pressed() -> void:
+	Settings.open_settings()
+	pass # Replace with function body.

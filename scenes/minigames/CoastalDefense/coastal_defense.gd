@@ -59,7 +59,7 @@ func show_message(text: String) -> void:
 func _process(_delta: float) -> void:
 	if current_state == MinigameState.PLAYING:
 		time_left = $SurviveTimer.time_left
-		time_label.text = "Time: " + str(int(time_left))
+		time_label.text = str(int(time_left))
 		if $Coast:
 			health_bar.value = $Coast.health
 		
