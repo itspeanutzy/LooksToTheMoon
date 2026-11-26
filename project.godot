@@ -63,7 +63,7 @@ variables={
 "celyna_name": "Celyna",
 "ermir_name": "Ermir",
 "seyche_name": "Seyche",
-"strymir_name": "Strymir"
+"strymir_name": "Styrmir"
 }
 text/letter_speed=0.03
 text/initial_text_reveal_skippable=true
@@ -102,7 +102,6 @@ history/simple_history_enabled=false
 [display]
 
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 mouse_cursor/custom_image="uid://bv2qijiqb4qgq"
 
 [editor_plugins]

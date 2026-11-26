@@ -3,6 +3,7 @@ set {ermir_name} = "???"
 join Seyche center
 Within a small seaside temple dedicated to Seyche, merchants gather to pray.
 "Civillian 1": Oh Great Seyche, please bless our travels. The winds of commerce are approaching, and we pray for your protection in your waters.
+# Do i add  the several merchants here? I am unsure Ok
 Seyche listens to their prayers from a distance until they finish and leave the temple.
 update Seyche left [move_time="1.0"]
 do ErmirLoop.play_bgm()
@@ -21,12 +22,12 @@ Ermir (Bored): I know that, every god does. I came here because of the AUDACITY 
 Ermir: you...
 Ermir: -instead of ME! for safe travels.
 Seyche (Sad): But… they prayed to me for safe travels in my waters, how does that relate to the winds?
-Ermir: Ah, Of course, a young goddess such as yourself wouldn’t understand.. Why would I even bother.
+Ermir: Ah, Of course, a young goddess such as yourself wouldn’t understand..
 Ermir: Ahem. You see, I am not JUST the god of the winds, but the god of travel and merchants as well! Which is why your merchants should have been praying to me instead for safe travels.
 Seyche: Ah, I’m sorry, I didn’t know. But the merchants have already departed and they have already requested my help.
 Ermir (Smug): Hah! That leaves one way to settle this… a contest!
 Seyche (Surprised): A… contest? What are we supposed to contest for?
-A storm is coming soon, and those merchant vessels won’t survive all by themselves! Why don’t we compete to see who can guide the merchant vessels the best?
+Ermir: A storm is coming soon, and those merchant vessels won’t survive all by themselves! Why don’t we compete to see who can guide the merchant vessels the best?
 Seyche: If so, why don’t we just work together so that the merchants can get through the storm?
 Ermir (Neutral): ...
 Ermir (Laugh): Snrk- Hahahahah!
