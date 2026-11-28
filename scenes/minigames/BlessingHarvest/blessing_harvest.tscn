@@ -123,6 +123,7 @@ bus = &"SFX"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1893551870]
 stream = ExtResource("11_0kosj")
+volume_db = -10.0
 autoplay = true
 bus = &"BGM"
 

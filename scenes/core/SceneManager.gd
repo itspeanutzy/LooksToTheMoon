@@ -28,6 +28,8 @@ func _ready() -> void:
 	_play_next()
 
 func _play_next() -> void:
+	if not is_inside_tree():
+		return
 	if _timeline_queue.is_empty():
 		GameState.sequence_playing = false
 		open_map()
@@ -45,6 +47,7 @@ func _on_timeline_ended() -> void:
 	_play_next()  # mainin timeline berikutnya di queue, atau balik ke map kalau habis
 
 func open_map() -> void:
-	get_tree().change_scene_to_file.call_deferred(MAP_SCENE)
-	overlay.visible = true
-	_play_next.call_deferred()
+	if is_inside_tree() and get_tree() != null:
+		get_tree().change_scene_to_file.call_deferred(MAP_SCENE)
+		overlay.visible = true
+		_play_next.call_deferred()

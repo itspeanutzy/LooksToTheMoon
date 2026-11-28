@@ -73,7 +73,7 @@ func _on_timeline_started() -> void:
 	map.stream_paused = true
 
 func _on_timeline_ended() -> void:
-	if GameState.is_playing:
+	if GameState.sequence_playing:
 		return
 	map.stream_paused = false
 	if not map.playing:
