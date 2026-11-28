@@ -14,7 +14,7 @@
 "pitch_variance": 0.0,
 "skip_characters": 2.0,
 "sound_path": "res://assets/audio/typing sonds/styrmir_type.wav",
-"volume_base": -5.0,
+"volume_base": 7.5,
 "volume_variance": -0.1
 }
 },
